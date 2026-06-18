@@ -487,10 +487,15 @@
     .istate-grid,.wd2,.ancd-panels,.fshow,.fp-obs,.prog-split,
     .hosting-grid,.curr-grid,.pilot-grid,.nextsteps,.wd-grid,
     .dg-grid,.country-grid,.tl,.team,.team-rest,.hc-grid,.phi-grid,
-    .split,.curr-full,.fshow{
+    .split,.curr-full,.fshow,.demo-stage{
       grid-template-columns:minmax(0,1fr) !important;
       display:grid !important;
     }
+    /* Annex slides: pipeline wraps, phone/chat visible full-width */
+    .pipeline{flex-wrap:wrap;gap:8px;}
+    .pl-stage{flex:1 1 100%;}
+    .pl-arrow{transform:rotate(90deg);}
+    .phone{margin:0 auto;}
     /* Prevent grid items from setting a min-content floor */
     .wd-ask,.wd-resp,.ns-contact,.ns-contacts{min-width:0;}
     /* Hide heavy mockup illustrations & copilot on mobile */
