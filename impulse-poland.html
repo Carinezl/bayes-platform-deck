@@ -488,9 +488,11 @@
     .hosting-grid,.curr-grid,.pilot-grid,.nextsteps,.wd-grid,
     .dg-grid,.country-grid,.tl,.team,.team-rest,.hc-grid,.phi-grid,
     .split,.curr-full,.fshow{
-      grid-template-columns:1fr !important;
+      grid-template-columns:minmax(0,1fr) !important;
       display:grid !important;
     }
+    /* Prevent grid items from setting a min-content floor */
+    .wd-ask,.wd-resp,.ns-contact,.ns-contacts{min-width:0;}
     /* Hide heavy mockup illustrations & copilot on mobile */
     .istate-grid .dws,.istate-grid .ws,.wd2 .bz,
     #platform-os .copilot,#platform-os .osx-pill,
