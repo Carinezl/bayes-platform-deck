@@ -478,6 +478,61 @@
     .team{grid-template-columns:1fr 1fr;}
     .team-rest{grid-template-columns:1fr 1fr;}
   }
+  @media (max-width:640px){
+    /* Typography scale-down */
+    .intro-state h1,.istate-grid h1{font-size:clamp(28px,8vw,40px);}
+    .secdiv h2{font-size:clamp(32px,9vw,52px);}
+    .title{font-size:clamp(20px,6vw,32px) !important;}
+    /* Single-column everything */
+    .istate-grid,.wd2,.ancd-panels,.fshow,.fp-obs,.prog-split,
+    .hosting-grid,.curr-grid,.pilot-grid,.nextsteps,
+    .dg-grid,.country-grid,.tl,.team,.team-rest,.hc-grid,.phi-grid{
+      grid-template-columns:1fr !important;
+    }
+    /* Hide heavy mockup illustrations on mobile */
+    .istate-grid .dws,.istate-grid .ws,.wd2 .bz,.fshow-stage{display:none !important;}
+    /* Prog-flow steps wrap vertically */
+    .prog-flow{flex-direction:column;overflow-x:visible;}
+    .pf-step{min-width:0;}
+    .pf-arr{transform:rotate(90deg);align-self:center;padding:4px 0;}
+    /* Projects: 2 cols */
+    .proj-grid{grid-template-columns:1fr 1fr !important;}
+    .pacc-body{grid-template-columns:1fr 1fr !important;}
+    /* Country grid: 2 cols */
+    .country-grid{grid-template-columns:1fr 1fr !important;}
+    /* Stats: wrap tighter */
+    .cohort-stats{gap:10px;}
+    .cohort-stat{padding:10px 14px;}
+    .cohort-stat b{font-size:24px;}
+    .stats{gap:20px;}
+    .stat b{font-size:28px;}
+    /* Impact block */
+    .impact{flex-direction:column;gap:8px;}
+    .impact-n{font-size:26px;}
+    /* Eimp press block: stack */
+    .eimp{flex-direction:column;gap:12px;}
+    .eimp-press{border-right:none;border-bottom:1px solid var(--border-soft);padding-right:0;padding-bottom:12px;}
+    /* Ancd: single panel */
+    .ancd-panels{gap:10px;}
+    /* Hosting cards full-width */
+    .hosting-card{padding:14px 15px;}
+    /* Cover chips wrap */
+    .pl-chips{gap:7px;}
+    .pl-chip{font-size:10px;padding:5px 11px;}
+    /* Contacts stack */
+    .ns-contacts{gap:8px;}
+    .ns-contact{padding:10px 13px;}
+    /* Wearables demo: hide complex chart, keep text */
+    .wd-grid{grid-template-columns:1fr !important;gap:10px;}
+    .wd-ask{display:none;}
+    /* Hide decorative watermarks */
+    .uc-watermark,.uc-pw{display:none;}
+    /* Togo phone mock: scale down */
+    .wa-ic{width:14px;height:14px;}
+    /* References logos: smaller gap */
+    .partners-grid{gap:16px 20px !important;}
+    .partners-grid img{height:28px !important;}
+  }
   /* Curriculum event rows */
   .row-event{flex-direction:row;align-items:center;gap:8px;padding:7px 10px;}
   .ev-info{display:flex;flex-direction:column;gap:1px;flex:1;text-align:left;}
