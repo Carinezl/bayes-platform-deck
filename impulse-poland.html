@@ -492,13 +492,15 @@
       display:grid !important;
     }
     /* Hide heavy mockup illustrations & copilot on mobile */
-    .istate-grid .dws,.istate-grid .ws,.wd2 .bz,.fshow-stage,
+    .istate-grid .dws,.istate-grid .ws,.wd2 .bz,
     #platform-os .copilot,#platform-os .osx-pill,
     #platform-os .split > div:last-child > .osx-lab{display:none !important;}
-    /* Slide 8 — fshow tabs become full-width stacked list */
+    /* Slide 8 — tabs stacked, stage shows below full-width */
     .fshow{gap:10px !important;}
     .fshow-tabs{display:flex;flex-direction:column;gap:8px;}
     .fs-tab{width:100%;}
+    .fshow-stage{display:block !important;width:100%;}
+    .fpanel.active{display:flex;}
     /* Slide 9 — platform-os: osx diagram readable */
     .osx-agents{flex-wrap:wrap;}
     .osx-abox{flex:1 1 40%;}
@@ -506,11 +508,11 @@
     .eimp{flex-direction:column;gap:12px;}
     .eimp-press{border-right:none;border-bottom:1px solid var(--border-soft);padding-right:0;padding-bottom:12px;}
     /* Slide 15 — bayes-curriculum: already single-col via .curr-full override */
-    /* Slide 20 — demo-analytics: show question list only */
+    /* Slide 20 — demo-analytics: questions stacked, response below */
     .wd-grid{gap:10px;}
     .wd-ask{display:flex !important;flex-direction:column;gap:6px;width:100%;}
     .wd-qbtn{white-space:normal;width:100%;box-sizing:border-box;}
-    .wd-resp{display:none !important;}
+    .wd-resp{display:block;min-height:200px;}
     .pscope{flex-wrap:wrap;font-size:11px;}
     /* Prog-flow steps wrap vertically */
     .prog-flow{flex-direction:column;overflow-x:visible;}
@@ -1694,6 +1696,16 @@
 
 <script src="https://cdn.jsdelivr.net/gh/bayesimpact/use-cases@main/lib/bayes-slides.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/bayesimpact/use-cases@main/lib/bayes.js"></script>
+
+<script>
+/* Accordion — slide 19 */
+document.querySelectorAll('.pacc-head').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var pacc = btn.closest('.pacc');
+    if(pacc) pacc.classList.toggle('open');
+  });
+});
+</script>
 
 <script>
 (function () {
