@@ -483,14 +483,35 @@
     .intro-state h1,.istate-grid h1{font-size:clamp(28px,8vw,40px);}
     .secdiv h2{font-size:clamp(32px,9vw,52px);}
     .title{font-size:clamp(20px,6vw,32px) !important;}
-    /* Single-column everything */
+    /* Single-column — cover ALL grids incl. inline style overrides */
     .istate-grid,.wd2,.ancd-panels,.fshow,.fp-obs,.prog-split,
-    .hosting-grid,.curr-grid,.pilot-grid,.nextsteps,
-    .dg-grid,.country-grid,.tl,.team,.team-rest,.hc-grid,.phi-grid{
+    .hosting-grid,.curr-grid,.pilot-grid,.nextsteps,.wd-grid,
+    .dg-grid,.country-grid,.tl,.team,.team-rest,.hc-grid,.phi-grid,
+    .split,.curr-full,.fshow{
       grid-template-columns:1fr !important;
+      display:grid !important;
     }
-    /* Hide heavy mockup illustrations on mobile */
-    .istate-grid .dws,.istate-grid .ws,.wd2 .bz,.fshow-stage{display:none !important;}
+    /* Hide heavy mockup illustrations & copilot on mobile */
+    .istate-grid .dws,.istate-grid .ws,.wd2 .bz,.fshow-stage,
+    #platform-os .copilot,#platform-os .osx-pill,
+    #platform-os .split > div:last-child > .osx-lab{display:none !important;}
+    /* Slide 8 — fshow tabs become full-width stacked list */
+    .fshow{gap:10px !important;}
+    .fshow-tabs{display:flex;flex-direction:column;gap:8px;}
+    .fs-tab{width:100%;}
+    /* Slide 9 — platform-os: osx diagram readable */
+    .osx-agents{flex-wrap:wrap;}
+    .osx-abox{flex:1 1 40%;}
+    /* Slide 13 — model: press block stack */
+    .eimp{flex-direction:column;gap:12px;}
+    .eimp-press{border-right:none;border-bottom:1px solid var(--border-soft);padding-right:0;padding-bottom:12px;}
+    /* Slide 15 — bayes-curriculum: already single-col via .curr-full override */
+    /* Slide 20 — demo-analytics: show question list only */
+    .wd-grid{gap:10px;}
+    .wd-ask{display:flex !important;flex-direction:column;gap:6px;width:100%;}
+    .wd-qbtn{white-space:normal;width:100%;box-sizing:border-box;}
+    .wd-resp{display:none !important;}
+    .pscope{flex-wrap:wrap;font-size:11px;}
     /* Prog-flow steps wrap vertically */
     .prog-flow{flex-direction:column;overflow-x:visible;}
     .pf-step{min-width:0;}
@@ -500,7 +521,7 @@
     .pacc-body{grid-template-columns:1fr 1fr !important;}
     /* Country grid: 2 cols */
     .country-grid{grid-template-columns:1fr 1fr !important;}
-    /* Stats: wrap tighter */
+    /* Stats */
     .cohort-stats{gap:10px;}
     .cohort-stat{padding:10px 14px;}
     .cohort-stat b{font-size:24px;}
@@ -509,27 +530,21 @@
     /* Impact block */
     .impact{flex-direction:column;gap:8px;}
     .impact-n{font-size:26px;}
-    /* Eimp press block: stack */
-    .eimp{flex-direction:column;gap:12px;}
-    .eimp-press{border-right:none;border-bottom:1px solid var(--border-soft);padding-right:0;padding-bottom:12px;}
     /* Ancd: single panel */
     .ancd-panels{gap:10px;}
-    /* Hosting cards full-width */
+    /* Hosting cards */
     .hosting-card{padding:14px 15px;}
-    /* Cover chips wrap */
+    /* Cover chips */
     .pl-chips{gap:7px;}
     .pl-chip{font-size:10px;padding:5px 11px;}
-    /* Contacts stack */
+    /* Contacts */
     .ns-contacts{gap:8px;}
     .ns-contact{padding:10px 13px;}
-    /* Wearables demo: hide complex chart, keep text */
-    .wd-grid{grid-template-columns:1fr !important;gap:10px;}
-    .wd-ask{display:none;}
     /* Hide decorative watermarks */
     .uc-watermark,.uc-pw{display:none;}
-    /* Togo phone mock: scale down */
+    /* Togo */
     .wa-ic{width:14px;height:14px;}
-    /* References logos: smaller gap */
+    /* References logos */
     .partners-grid{gap:16px 20px !important;}
     .partners-grid img{height:28px !important;}
   }
