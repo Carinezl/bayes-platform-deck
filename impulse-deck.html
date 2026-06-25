@@ -198,17 +198,17 @@ em.hl {
 .stat-box.accent { border-left: 3px solid var(--accent-orange); }
 
 /* ── Programme items ── */
-.prog-items { display: flex; flex-direction: column; gap: 9px; margin-top: 16px; }
+.prog-items { display: flex; flex-direction: column; gap: 0; margin-top: 18px; }
 .prog-item {
-  display: flex; align-items: flex-start; gap: 12px; padding: 11px 14px;
-  background: var(--card); border: 1px solid var(--border-soft);
-  border-radius: 12px; box-shadow: var(--shadow);
+  display: flex; align-items: baseline; gap: 18px; padding: 14px 0;
+  border-bottom: 1px solid var(--border-soft);
 }
+.prog-item:last-child { border-bottom: none; }
 .prog-num {
-  font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 800;
-  color: var(--accent-orange); letter-spacing: -.02em; flex: 0 0 auto; min-width: 40px; line-height: 1; padding-top: 2px;
+  font-family: 'JetBrains Mono', monospace; font-size: clamp(30px, 9vw, 44px); font-weight: 800;
+  color: var(--accent-orange); letter-spacing: -.03em; flex: 0 0 auto; min-width: 78px; line-height: 1;
 }
-.prog-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.45; }
+.prog-desc { font-size: 14px; color: var(--ink-soft); line-height: 1.5; align-self: center; }
 .prog-desc b { color: var(--ink); }
 
 /* ── Cover ── */
@@ -443,7 +443,7 @@ em.hl {
   display: flex; align-items: center; justify-content: center;
   font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; color: var(--muted);
 }
-.av-name { font-size: 9px; color: var(--muted); text-align: center; line-height: 1.2; max-width: 60px; }
+.av-name { font-size: 9px; font-weight: 700; color: var(--ink); text-align: center; line-height: 1.2; max-width: 60px; }
 .av-role { font-size: 8px; color: var(--border-soft); text-align: center; max-width: 60px; line-height: 1.2; }
 
 .result-placeholder {
@@ -675,6 +675,10 @@ em.hl {
       <p class="reveal" style="font-size:12px; color:var(--muted); margin:0 0 4px;">
         <span data-fr>23 projets en 6 typologies selon l'usage principal adressé.</span>
         <span data-en>23 projects across 6 typologies by primary use.</span>
+      </p>
+      <p class="reveal" style="font-size:12px; font-style:italic; color:var(--accent-orange); margin:0 0 4px;">
+        <span data-fr>Cliquez sur une catégorie pour découvrir les projets associés.</span>
+        <span data-en>Click a category to explore its projects.</span>
       </p>
 
       <div class="sommaire-cats reveal">
