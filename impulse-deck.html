@@ -451,6 +451,14 @@ em.hl {
   border-radius: 10px; padding: 12px; font-family: 'JetBrains Mono', monospace;
   font-size: 10px; color: var(--muted); text-align: center; letter-spacing: .04em;
 }
+.feat-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.feat-list li {
+  font-size: 12px; color: var(--ink-soft); line-height: 1.4; padding-left: 16px; position: relative;
+}
+.feat-list li::before {
+  content: ''; position: absolute; left: 0; top: 7px;
+  width: 5px; height: 5px; border-radius: 50%; background: var(--accent-orange);
+}
 
 /* ── Responsive ── */
 @media (min-width: 640px) {
@@ -697,13 +705,13 @@ em.hl {
               <span class="som-proj-name"><span data-fr>PedIAnesthInfo · Chatbot anesthésie pédiatrique</span><span data-en>PedIAnesthInfo · Pediatric anesthesia chatbot</span></span>
               <span class="som-proj-loc">Robert-Debré</span>
             </a>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Chatbot chirurgie gynécologique "MIAOU"</span><span data-en>"MIAOU" gynecological surgery chatbot</span></span><span class="som-proj-loc">Bicêtre</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Chatbot PMA</span><span data-en>Fertility (ART) chatbot</span></span><span class="som-proj-loc">Antoine-Béclère</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>TrachBot · Chatbot Trachéotomie</span><span data-en>TrachBot · Tracheotomy chatbot</span></span><span class="som-proj-loc">Necker</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Information et orientation psy IdF</span><span data-en>Mental-health info & guidance (IdF)</span></span><span class="som-proj-loc">GHU Paris</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Portail prévention</span><span data-en>Prevention portal</span></span><span class="som-proj-loc">CHU Rouen</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Socioface · Assistant social</span><span data-en>Socioface · Social-worker assistant</span></span><span class="som-proj-loc">Necker</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Livret Accueil Patient</span><span data-en>Patient welcome booklet</span></span><span class="som-proj-loc">AP-HP</span></span>
+            <a class="som-proj linked" href="#s-proj-miaou"><span class="som-proj-name"><span data-fr>Chatbot chirurgie gynécologique "MIAOU"</a><span data-en>"MIAOU" gynecological surgery chatbot</span></span><span class="som-proj-loc">Bicêtre</span></span>
+            <a class="som-proj linked" href="#s-proj-pma"><span class="som-proj-name"><span data-fr>Chatbot PMA</a><span data-en>Fertility (ART) chatbot</span></span><span class="som-proj-loc">Antoine-Béclère</span></span>
+            <a class="som-proj linked" href="#s-proj-trachbot"><span class="som-proj-name"><span data-fr>TrachBot · Chatbot Trachéotomie</a><span data-en>TrachBot · Tracheotomy chatbot</span></span><span class="som-proj-loc">Necker</span></span>
+            <a class="som-proj linked" href="#s-proj-psyline"><span class="som-proj-name"><span data-fr>Information et orientation psy IdF</a><span data-en>Mental-health info & guidance (IdF)</span></span><span class="som-proj-loc">GHU Paris</span></span>
+            <a class="som-proj linked" href="#s-proj-portail-prevention"><span class="som-proj-name"><span data-fr>Portail prévention</a><span data-en>Prevention portal</span></span><span class="som-proj-loc">CHU Rouen</span></span>
+            <a class="som-proj linked" href="#s-proj-socioface"><span class="som-proj-name"><span data-fr>Socioface · Assistant social</a><span data-en>Socioface · Social-worker assistant</span></span><span class="som-proj-loc">Necker</span></span>
+            <a class="som-proj linked" href="#s-proj-livret-accueil"><span class="som-proj-name"><span data-fr>Livret Accueil Patient</a><span data-en>Patient welcome booklet</span></span><span class="som-proj-loc">AP-HP</span></span>
           </div>
         </div>
 
@@ -717,11 +725,11 @@ em.hl {
             <span class="som-arrow">▾</span>
           </button>
           <div class="som-projects">
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Vitadoc · Consultation Cardiologie</span><span data-en>Vitadoc · Cardiology consultation</span></span><span class="som-proj-loc">CHU Dijon</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Kairos · Consultation Chirurgie Orthopédique</span><span data-en>Kairos · Orthopedic surgery consultation</span></span><span class="som-proj-loc">Lariboisière</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Vestella · Accompagnement vertiges</span><span data-en>Vestella · Vertigo support</span></span><span class="som-proj-loc">Necker / Lariboisière</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Consultation HAD Oncologie</span><span data-en>Home-care oncology consultation</span></span><span class="som-proj-loc">HAD AP-HP</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>GerIA · Patients gériatrie</span><span data-en>GerIA · Geriatric patients</span></span><span class="som-proj-loc">CHRU Tours</span></span>
+            <a class="som-proj linked" href="#s-proj-vitadoc"><span class="som-proj-name"><span data-fr>Vitadoc · Consultation Cardiologie</a><span data-en>Vitadoc · Cardiology consultation</span></span><span class="som-proj-loc">CHU Dijon</span></span>
+            <a class="som-proj linked" href="#s-proj-kairos"><span class="som-proj-name"><span data-fr>Kairos · Consultation Chirurgie Orthopédique</a><span data-en>Kairos · Orthopedic surgery consultation</span></span><span class="som-proj-loc">Lariboisière</span></span>
+            <a class="som-proj linked" href="#s-proj-vestella"><span class="som-proj-name"><span data-fr>Vestella · Accompagnement vertiges</a><span data-en>Vestella · Vertigo support</span></span><span class="som-proj-loc">Necker / Lariboisière</span></span>
+            <a class="som-proj linked" href="#s-proj-had-oncologie"><span class="som-proj-name"><span data-fr>Consultation HAD Oncologie</a><span data-en>Home-care oncology consultation</span></span><span class="som-proj-loc">HAD AP-HP</span></span>
+            <a class="som-proj linked" href="#s-proj-geria"><span class="som-proj-name"><span data-fr>GerIA · Patients gériatrie</a><span data-en>GerIA · Geriatric patients</span></span><span class="som-proj-loc">CHRU Tours</span></span>
           </div>
         </div>
 
@@ -735,9 +743,9 @@ em.hl {
             <span class="som-arrow">▾</span>
           </button>
           <div class="som-projects">
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>UrgIA · Assistant protocoles Urgences</span><span data-en>UrgIA · Emergency protocols assistant</span></span><span class="som-proj-loc">Saint-Antoine</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Néoréabot · Réanimation néonatale</span><span data-en>Néoréabot · Neonatal intensive care</span></span><span class="som-proj-loc">Robert-Debré</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Assistant Génétique</span><span data-en>Genetics assistant</span></span><span class="som-proj-loc">Pitié-Salpêtrière</span></span>
+            <a class="som-proj linked" href="#s-proj-urgia"><span class="som-proj-name"><span data-fr>UrgIA · Assistant protocoles Urgences</a><span data-en>UrgIA · Emergency protocols assistant</span></span><span class="som-proj-loc">Saint-Antoine</span></span>
+            <a class="som-proj linked" href="#s-proj-neoreabot"><span class="som-proj-name"><span data-fr>Néoréabot · Réanimation néonatale</a><span data-en>Néoréabot · Neonatal intensive care</span></span><span class="som-proj-loc">Robert-Debré</span></span>
+            <a class="som-proj linked" href="#s-proj-assistant-genetique"><span class="som-proj-name"><span data-fr>Assistant Génétique</a><span data-en>Genetics assistant</span></span><span class="som-proj-loc">Pitié-Salpêtrière</span></span>
           </div>
         </div>
 
@@ -751,9 +759,9 @@ em.hl {
             <span class="som-arrow">▾</span>
           </button>
           <div class="som-projects">
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>ACTIV · Prescription d'Activité Physique Adaptée</span><span data-en>ACTIV · Adapted physical-activity prescription</span></span><span class="som-proj-loc">Pitié-Salpêtrière</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Assistant labo · Chatlabot</span><span data-en>Lab assistant · Chatlabot</span></span><span class="som-proj-loc">AP-HP</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>OK Chimio HAD</span><span data-en>OK Chimio · home chemotherapy</span></span><span class="som-proj-loc">AP-HP HAD</span></span>
+            <a class="som-proj linked" href="#s-proj-activ"><span class="som-proj-name"><span data-fr>ACTIV · Prescription d'Activité Physique Adaptée</a><span data-en>ACTIV · Adapted physical-activity prescription</span></span><span class="som-proj-loc">Pitié-Salpêtrière</span></span>
+            <a class="som-proj linked" href="#s-proj-chatlabot"><span class="som-proj-name"><span data-fr>Assistant labo · Chatlabot</a><span data-en>Lab assistant · Chatlabot</span></span><span class="som-proj-loc">AP-HP</span></span>
+            <a class="som-proj linked" href="#s-proj-ok-chimio"><span class="som-proj-name"><span data-fr>OK Chimio HAD</a><span data-en>OK Chimio · home chemotherapy</span></span><span class="som-proj-loc">AP-HP HAD</span></span>
           </div>
         </div>
 
@@ -767,8 +775,8 @@ em.hl {
             <span class="som-arrow">▾</span>
           </button>
           <div class="som-projects">
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Navira · Indicateurs qualité</span><span data-en>Navira · Quality indicators</span></span><span class="som-proj-loc">Avicenne / Inria</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Osiris Plus · Événements indésirables</span><span data-en>Osiris Plus · Adverse events</span></span><span class="som-proj-loc">AP-HP</span></span>
+            <a class="som-proj linked" href="#s-proj-navira"><span class="som-proj-name"><span data-fr>Navira · Indicateurs qualité</a><span data-en>Navira · Quality indicators</span></span><span class="som-proj-loc">Avicenne / Inria</span></span>
+            <a class="som-proj linked" href="#s-proj-osiris-plus"><span class="som-proj-name"><span data-fr>Osiris Plus · Événements indésirables</a><span data-en>Osiris Plus · Adverse events</span></span><span class="som-proj-loc">AP-HP</span></span>
           </div>
         </div>
 
@@ -782,8 +790,8 @@ em.hl {
             <span class="som-arrow">▾</span>
           </button>
           <div class="som-projects">
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Screener · Revues systématiques</span><span data-en>Screener · Systematic reviews</span></span><span class="som-proj-loc">Hôtel-Dieu</span></span>
-            <span class="som-proj"><span class="som-proj-name"><span data-fr>Amadeus · E-screening patients</span><span data-en>Amadeus · Patient e-screening</span></span><span class="som-proj-loc">HEGP</span></span>
+            <a class="som-proj linked" href="#s-proj-screener"><span class="som-proj-name"><span data-fr>Screener · Revues systématiques</a><span data-en>Screener · Systematic reviews</span></span><span class="som-proj-loc">Hôtel-Dieu</span></span>
+            <a class="som-proj linked" href="#s-proj-amadeus"><span class="som-proj-name"><span data-fr>Amadeus · E-screening patients</a><span data-en>Amadeus · Patient e-screening</span></span><span class="som-proj-loc">HEGP</span></span>
           </div>
         </div>
 
@@ -791,8 +799,8 @@ em.hl {
     </div>
   </section>
 
-  <!-- ── 7 · DIVIDER — Accompagnement patient ── -->
-  <section class="slide dark divider" id="s-div-1">
+  <!-- DIVIDER — Accompagnement patient -->
+  <section class="slide dark divider" id="s-div-i">
     <svg class="divider-symbol" viewBox="0 0 415.51 407.86" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
       <path d="M65.43,402.63l-47.1-68.1c42.03-29.07,67.12-77.5,67.12-129.56S59.73,103.22,16.64,74.27L62.82,5.55c66.01,44.36,105.42,118.91,105.42,199.43s-38.44,153.13-102.82,197.66Z"/>
       <path d="M348.04,397.53c-61.91-44.73-98.87-117.58-98.87-194.86,0-38.64,9.28-77.04,26.83-111.04,17.02-32.97,41.78-61.85,71.6-83.5l48.65,67c-40.25,29.23-64.28,76.9-64.28,127.54s24.14,98.54,64.56,127.75l-48.5,67.11Z"/>
@@ -802,54 +810,42 @@ em.hl {
       <path d="M374.02,325.04c23.19-.25,41.5,18.95,41.48,41.36-.02,23.14-18.54,41.52-41.95,41.4-21.73-.11-41-17.32-40.97-41.35.02-25.2,20.82-41.73,41.44-41.41Z"/>
     </svg>
     <div class="slide-inner">
-      <div class="divider-num reveal">
-        <span data-fr>I · 8 projets dans cette catégorie</span>
-        <span data-en>I · 8 projects in this category</span>
-      </div>
-      <h2 class="reveal">
-        <span data-fr>Accompagnement<br>patient</span>
-        <span data-en>Patient<br>support</span>
-      </h2>
-      <p class="sub reveal">
-        <span data-fr>Donner aux patients et à leurs proches une information juste, continue, personnalisée : avant, pendant et après la prise en charge.</span>
-        <span data-en>Giving patients and their families accurate, continuous, personalized information: before, during and after care.</span>
-      </p>
+      <div class="divider-num reveal"><span data-fr>I · 8 projets dans cette catégorie</span><span data-en>I · 8 projects in this category</span></div>
+      <h2 class="reveal"><span data-fr>Accompagnement patient</span><span data-en>Patient support</span></h2>
+      <p class="sub reveal"><span data-fr>Donner aux patients et à leurs proches une information juste, continue, personnalisée : avant, pendant et après la prise en charge.</span><span data-en>Giving patients and their families accurate, continuous, personalized information: before, during and after care.</span></p>
     </div>
   </section>
 
-  <!-- ── 8 · PROJET — PedIAnesthInfo ── -->
+  <!-- PROJET — PedIAnesthInfo -->
   <section class="slide" id="s-proj-pedianesthinfo">
     <div class="slide-inner">
-
       <div class="proj-header reveal">
-        <span class="proj-cat-tag">
-          <span data-fr>I · Accompagnement patient</span>
-          <span data-en>I · Patient support</span>
-        </span>
+        <span class="proj-cat-tag"><span data-fr>I · Accompagnement patient</span><span data-en>I · Patient support</span></span>
         <div class="proj-meta">
           <span class="proj-hospital">Hôpital Robert-Debré · AP-HP</span>
-          <span class="proj-service">
-            <span data-fr>Service · Anesthésie pédiatrique</span>
-            <span data-en>Department · Pediatric anesthesia</span>
-          </span>
+          <span class="proj-service"><span data-fr>Service · Anesthésie pédiatrique</span><span data-en>Department · Pediatric anesthesia</span></span>
         </div>
         <div class="proj-title-group">
           <h1 class="proj-title">PedIAnesthInfo</h1>
-          <span class="proj-subtitle">
-            <span data-fr>Chatbot anesthésie pédiatrique</span>
-            <span data-en>Pediatric anesthesia chatbot</span>
-          </span>
+          <span class="proj-subtitle"><span data-fr>Chatbot anesthésie pédiatrique</span><span data-en>Pediatric anesthesia chatbot</span></span>
         </div>
       </div>
-
-      <div class="proj-section-label reveal">
-        <span data-fr>Équipe projet</span><span data-en>Project team</span>
-      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
       <div class="team-row reveal">
         <div class="avatar">
           <div class="av-circle">VS</div>
           <div class="av-name">Dr Valentin Saqué</div>
-          <div class="av-role"><span data-fr>CCA Anesthésie · Lead</span><span data-en>Lead · Anesthesia CCA</span></div>
+          <div class="av-role"><span data-fr>CCA Anesthésie · Lead</span><span data-en>Anesthesia CCA · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">CB</div>
+          <div class="av-name">Clarisse Bellet</div>
+          <div class="av-role"><span data-fr>Ingénieure de bloc</span><span data-en>OR engineer</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">SD</div>
+          <div class="av-name">Souhayl Dahmani</div>
+          <div class="av-role"><span data-fr>PUPH · Scientific Lead</span><span data-en>PUPH · Scientific Lead</span></div>
         </div>
         <div class="avatar">
           <div class="av-circle">PP</div>
@@ -857,46 +853,1396 @@ em.hl {
           <div class="av-role"><span data-fr>PH Anesthésie</span><span data-en>Attending Anesthesiologist</span></div>
         </div>
         <div class="avatar">
-          <div class="av-circle">CB</div>
-          <div class="av-name">Clarisse Bellet</div>
-          <div class="av-role"><span data-fr>Ingénieure de bloc</span><span data-en>OR engineer</span></div>
+          <div class="av-circle">FJ</div>
+          <div class="av-name">Dr Florence Julien-M.</div>
+          <div class="av-role"><span data-fr>PH Anesthésie</span><span data-en>Attending Anesthesiologist</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">AH</div>
+          <div class="av-name">Dr Anne-L. Horlin</div>
+          <div class="av-role"><span data-fr>PH Anesthésie</span><span data-en>Attending Anesthesiologist</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">BB</div>
+          <div class="av-name">Dr Béatrice Bruneau</div>
+          <div class="av-role"><span data-fr>PH Anesthésie</span><span data-en>Attending Anesthesiologist</span></div>
         </div>
       </div>
-
       <div class="proj-two-col reveal" style="margin-top:10px;">
         <div class="proj-block">
           <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
-          <p>
-            <span data-fr>Apporter aux parents d'un enfant opéré une information complète et continue sur l'anesthésie et le parcours pré-opératoire pour aborder l'intervention plus sereinement.</span>
-            <span data-en>Give parents of children undergoing surgery complete, continuous information about anesthesia and the pre-operative pathway.</span>
-          </p>
+          <p><span data-fr>Apporter un complément d'information aux parents d'enfant devant être opéré à Robert-Debré sur l'anesthésie et le parcours pré-opératoire.</span><span data-en>Give parents of children operated at Robert-Debré additional information on anesthesia and the pre-operative pathway.</span></p>
         </div>
         <div class="proj-block">
           <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
-          <p>
-            <span data-fr>Chatbot qui partage aux familles une information précise, pertinente et fiable sur l'anesthésie et le parcours pré-opératoire.</span>
-            <span data-en>A chatbot that provides families with accurate, relevant and reliable information on anesthesia and the pre-operative pathway.</span>
-          </p>
+          <p><span data-fr>Chatbot qui délivre aux parents une information précise, pertinente et fiable sur l'anesthésie et le parcours pré-opératoire en vigueur à Robert-Debré.</span><span data-en>A chatbot delivering parents accurate, relevant and reliable information on anesthesia and the pre-operative pathway at Robert-Debré.</span></p>
         </div>
         <div class="proj-block full">
           <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
-          <div class="result-placeholder">
-            <span data-fr>À renseigner : section à compléter avec les indicateurs clés du prototype</span>
-            <span data-en>To be filled: key prototype metrics</span>
-          </div>
+          <p><span data-fr>Campagne de test (juin 2026, 14 participants) : 13 questions / session en moyenne · note de satisfaction 4,62 / 5 · objectif de sécurité rempli (aucun contournement du chatbot).</span><span data-en>Test campaign (June 2026, 14 participants): 13 questions / session on average · satisfaction 4.62 / 5 · safety goal met (no chatbot bypass).</span></p>
         </div>
         <div class="proj-block full">
           <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
-          <div class="result-placeholder">
-            <span data-fr>À renseigner : bases documentaires, règles de fonctionnement, données analysées en entrée</span>
-            <span data-en>To be filled: knowledge bases, operating rules, input data</span>
-          </div>
+          <ul class="feat-list">
+            <li><span data-fr>Modèle Gemini 2.5 Pro</span><span data-en>Gemini 2.5 Pro model</span></li>
+            <li><span data-fr>Bases documentaires : 11 documents (référentiels de sociétés savantes et documents internes)</span><span data-en>Knowledge base: 11 documents (learned-society guidelines and internal documents)</span></li>
+            <li><span data-fr>10 « golden questions » à traitement spécifique (âge, risque, heures de convocation…)</span><span data-en>10 golden questions with specific handling (age, risk, admission times…)</span></li>
+            <li><span data-fr>Ton empathique et rassurant, cadrage clair des limites</span><span data-en>Empathetic, reassuring tone with clear scope limits</span></li>
+          </ul>
         </div>
       </div>
-
     </div>
   </section>
 
+  <!-- PROJET — Chatbot gynécologique « MIAOU » -->
+  <section class="slide" id="s-proj-miaou">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>I · Accompagnement patient</span><span data-en>I · Patient support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Bicêtre · AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · Gynécologie obstétrique</span><span data-en>Department · Obstetrics &amp; gynecology</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Chatbot gynécologique « MIAOU »</h1>
+          <span class="proj-subtitle"><span data-fr>Le chat gynéco · chirurgie gynécologique</span><span data-en>The gyn chat · gynecological surgery</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">PG</div>
+          <div class="av-name">Pr Perrine Goussault Capmas</div>
+          <div class="av-role"><span data-fr>PUPH Gynécologie obstétrique · Lead</span><span data-en>PUPH OB-GYN · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">A</div>
+          <div class="av-name">Mme Allam</div>
+          <div class="av-role"><span data-fr>Cadre de santé</span><span data-en>Healthcare manager</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">K</div>
+          <div class="av-name">M. Konieczna</div>
+          <div class="av-role"><span data-fr>Cadre du bloc opératoire</span><span data-en>OR manager</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">M</div>
+          <div class="av-name">Dr Maheut</div>
+          <div class="av-role"><span data-fr>Chirurgienne gynécologue</span><span data-en>Gynecological surgeon</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">B</div>
+          <div class="av-name">Dr Bouillant Linet</div>
+          <div class="av-role"><span data-fr>Anesthésiste</span><span data-en>Anesthesiologist</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">D</div>
+          <div class="av-name">Mme Desperies Baille</div>
+          <div class="av-role"><span data-fr>Secrétaire médicale</span><span data-en>Medical secretary</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">H</div>
+          <div class="av-name">Mme Hadjeras</div>
+          <div class="av-role"><span data-fr>Secrétaire médicale</span><span data-en>Medical secretary</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">S</div>
+          <div class="av-name">Mme Seurin</div>
+          <div class="av-role"><span data-fr>Cadre de consultation</span><span data-en>Clinic manager</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Fournir aux patient·e·s pris·es en charge en chirurgie gynécologique des informations clés en pré et post-opératoire (médicales et organisationnelles).</span><span data-en>Give gynecological surgery patients key pre- and post-operative information (medical and logistical).</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot patient qui accompagne l'utilisatrice autour de l'intervention en lui apportant des informations clés et en répondant à ses questions.</span><span data-en>A patient chatbot that supports the user around surgery with key information and by answering their questions.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>Tests de validation en cours. Premiers résultats sur 6 sessions : réponses claires et factuellement correctes selon les relecteurs.</span><span data-en>Validation testing underway. First results on 6 sessions: clear, factually correct answers per reviewers.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Accompagnement péri-opératoire et information sur les études cliniques d'inclusion possible</span><span data-en>Peri-operative support and information on clinical studies for possible inclusion</span></li>
+            <li><span data-fr>Empathique et rassurant, il ne se positionne jamais comme un soignant ou un médecin</span><span data-en>Empathetic and reassuring, never positioning itself as a caregiver or physician</span></li>
+            <li><span data-fr>Oriente systématiquement vers les urgences en cas de symptôme anormal signalé</span><span data-en>Systematically directs to the ER when an abnormal symptom is reported</span></li>
+            <li><span data-fr>Réduit la sollicitation des soignants, y compris hors horaires du secrétariat</span><span data-en>Reduces demands on caregivers, including outside front-desk hours</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Chatbot PMA -->
+  <section class="slide" id="s-proj-pma">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>I · Accompagnement patient</span><span data-en>I · Patient support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Antoine-Béclère · AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · Médecine de la reproduction et préservation de la fertilité</span><span data-en>Department · Reproductive medicine &amp; fertility preservation</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Chatbot PMA</h1>
+          <span class="proj-subtitle"><span data-fr>Médecine de la reproduction et fertilité</span><span data-en>Reproductive medicine &amp; fertility</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">ÉS</div>
+          <div class="av-name">Dr Émine Saïs</div>
+          <div class="av-role"><span data-fr>Médecine de la reproduction · Lead</span><span data-en>Reproductive medicine · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">CS</div>
+          <div class="av-name">Pr Charlotte Sonigo</div>
+          <div class="av-role"><span data-fr>Médecine de la reproduction · Co-lead</span><span data-en>Reproductive medicine · Co-lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">MG</div>
+          <div class="av-name">Pr Michaël Grynberg</div>
+          <div class="av-role"><span data-fr>Chef de service · Co-lead</span><span data-en>Department head · Co-lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">CB</div>
+          <div class="av-name">Dr Céleste Becquart</div>
+          <div class="av-role"><span data-fr>Médecine de la reproduction</span><span data-en>Reproductive medicine</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">FS</div>
+          <div class="av-name">Dr Fatoumata Souaré</div>
+          <div class="av-role"><span data-fr>Médecine de la reproduction</span><span data-en>Reproductive medicine</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Accompagner les patientes pendant leur prise en charge en Assistance Médicale à la Procréation et soutenir les soignants du service.</span><span data-en>Support patients throughout their assisted reproduction (ART) care and support the department's caregivers.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot pour les soignants et les patientes suivies en AMP, répondant aux questions fréquentes (examens avant ponction, consignes pendant la stimulation, symptômes à surveiller).</span><span data-en>A chatbot for caregivers and ART patients answering common questions (pre-retrieval tests, stimulation guidance, symptoms to watch).</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>Chatbot patient : temps de réponse aux mails divisé par 2. Chatbot soignant : remplace 12 conversations WhatsApp de service via la centralisation de l'information.</span><span data-en>Patient chatbot: email response time halved. Caregiver chatbot: replaces 12 ward WhatsApp threads by centralizing information.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Aide à la réponse aux mails des patientes</span><span data-en>Assistance answering patient emails</span></li>
+            <li><span data-fr>Recommandations européennes, spécificité en préservation de la fertilité pour motif oncologique, protocoles du service</span><span data-en>European guidelines, oncological fertility-preservation specifics, department protocols</span></li>
+            <li><span data-fr>Chatbot raisonnant sur une knowledge base plutôt qu'une base brute</span><span data-en>Chatbot reasoning over a knowledge base rather than raw data</span></li>
+            <li><span data-fr>&gt; 10 000 échanges de mails anonymisés transformés en knowledge base classée par thèmes</span><span data-en>&gt; 10,000 anonymized email exchanges turned into a theme-classified knowledge base</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — TrachBot -->
+  <section class="slide" id="s-proj-trachbot">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>I · Accompagnement patient</span><span data-en>I · Patient support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Necker-Enfants Malades · AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · ORL pédiatrique</span><span data-en>Department · Pediatric ENT</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">TrachBot</h1>
+          <span class="proj-subtitle"><span data-fr>Chatbot trachéotomie</span><span data-en>Tracheotomy chatbot</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">BT</div>
+          <div class="av-name">Dr Briac Thierry</div>
+          <div class="av-role"><span data-fr>ORL pédiatrique · Lead</span><span data-en>Pediatric ENT · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">AC</div>
+          <div class="av-name">Aurélie Coiffard</div>
+          <div class="av-role"><span data-fr>Infirmière d'éducation thérapeutique</span><span data-en>Therapeutic-education nurse</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Répondre 24/24 aux questions des parents d'une cohorte de patients chroniques suivis pour une trachéotomie et identifier les situations d'urgence pour bien les orienter.</span><span data-en>Answer parents' questions 24/7 for a cohort of chronic tracheotomy patients and flag emergencies for proper referral.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot qui répond aux questions des parents sur la trachéotomie, les soins de retour à la maison et l'accompagnement social.</span><span data-en>A chatbot answering parents' questions on tracheotomy, home care and social support.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Bases documentaires internes : protocoles hospitaliers et recommandations internationales</span><span data-en>Internal knowledge base: hospital protocols and international guidelines</span></li>
+            <li><span data-fr>Cadrage des situations d'urgence</span><span data-en>Emergency-situation framing</span></li>
+            <li><span data-fr>Empathique : il réexplique patiemment les soins de trachéotomie</span><span data-en>Empathetic: patiently re-explains tracheotomy care</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Chatbot Psy IDF -->
+  <section class="slide" id="s-proj-psyline">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>I · Accompagnement patient</span><span data-en>I · Patient support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">GHU Paris Psychiatrie &amp; Neurosciences</span>
+          <span class="proj-service"><span data-fr>Service · PsyLine</span><span data-en>Department · PsyLine</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Chatbot Psy IDF</h1>
+          <span class="proj-subtitle"><span data-fr>PsyLine · information et orientation</span><span data-en>PsyLine · information &amp; guidance</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">LY</div>
+          <div class="av-name">Dr Liova Yon</div>
+          <div class="av-role"><span data-fr>Chef de service PsyLine · Lead</span><span data-en>PsyLine department head · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">BA</div>
+          <div class="av-name">Dr Bellis Avicenne</div>
+          <div class="av-role"><span data-fr>Psychiatre PsyLine · Lead</span><span data-en>PsyLine psychiatrist · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">EP</div>
+          <div class="av-name">Emma Poignard</div>
+          <div class="av-role"><span data-fr>Directrice du TLE MindLink</span><span data-en>MindLink TLE director</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">KL</div>
+          <div class="av-name">Kéva Lallier</div>
+          <div class="av-role"><span data-fr>Chargée de mission TLE MindLink</span><span data-en>MindLink TLE project officer</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">MH</div>
+          <div class="av-name">Marianne Henry</div>
+          <div class="av-role"><span data-fr>Chargée d'expérience utilisateur</span><span data-en>User-experience officer</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">PR</div>
+          <div class="av-name">Palmyre Roigt</div>
+          <div class="av-role"><span data-fr>Directrice adjointe communication &amp; mécénat</span><span data-en>Deputy director, communications &amp; patronage</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Améliorer l'accès au service Psy IDF pour les usagers, notamment les jeunes, et faciliter leur information et leur orientation dans le système médico-social.</span><span data-en>Improve access to the Psy IDF service for users, especially young people, and ease their information and guidance within the medico-social system.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot conversationnel qui, à partir des échanges, informe l'usager et l'oriente vers le ou les services médico-sociaux les plus adaptés à son besoin.</span><span data-en>A conversational chatbot that, from the exchange, informs the user and directs them to the most suitable medico-social services.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>Tests en entretien (public 30-70 ans, professionnels, aidants, concernés) : intérêt fort en début de parcours de soin, le chatbot fait connaître des ressources méconnues. Panel à élargir vers les 12-30 ans.</span><span data-en>Interview-based tests (ages 30-70, professionals, caregivers, affected people): strong interest early in the care pathway; the chatbot surfaces little-known resources. Panel to be widened to ages 12-30.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Base documentaire CPOA et fiches Psycom</span><span data-en>CPOA knowledge base and Psycom fact sheets</span></li>
+            <li><span data-fr>Cadrage des situations d'urgence</span><span data-en>Emergency-situation framing</span></li>
+            <li><span data-fr>Reformulation par mirroring et validation du besoin, sans poser de diagnostic</span><span data-en>Mirroring reformulation and need validation, without making a diagnosis</span></li>
+            <li><span data-fr>Réorientation vers des ressources diversifiées (chat, groupe de parole, structure, ligne d'écoute)</span><span data-en>Referral to varied resources (chat, support groups, facilities, helplines)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Portail Prévention -->
+  <section class="slide" id="s-proj-portail-prevention">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>I · Accompagnement patient</span><span data-en>I · Patient support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">CHU Rouen Normandie</span>
+          <span class="proj-service"><span data-fr>Service · Nutrition / Prévention</span><span data-en>Department · Nutrition / Prevention</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Portail Prévention</h1>
+          <span class="proj-subtitle"><span data-fr>Information et prévention patient</span><span data-en>Patient information &amp; prevention</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">NL</div>
+          <div class="av-name">Nabila Laajail</div>
+          <div class="av-role"><span data-fr>Directrice de la DRCI · Lead</span><span data-en>DRCI director · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">NA</div>
+          <div class="av-name">Pr Najate Achamrah</div>
+          <div class="av-role"><span data-fr>Cheffe de service Nutrition</span><span data-en>Nutrition department head</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">JG</div>
+          <div class="av-name">Dr Julien Grosjean</div>
+          <div class="av-role"><span data-fr>Coordinateur Centre de Données Cliniques, Responsable EDS</span><span data-en>Clinical Data Center coordinator, health-data warehouse lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">TS</div>
+          <div class="av-name">Thierry Samper</div>
+          <div class="av-role"><span data-fr>Chef de projet IA · DSI</span><span data-en>AI project manager · IT dept</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Améliorer la prévention des citoyens du territoire en leur délivrant une information de qualité et personnalisée selon leur condition et leur lieu d'habitation.</span><span data-en>Improve prevention for the region's citizens by delivering quality, personalized information based on their condition and location.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot d'information et de prévention qui partage de manière proactive des conseils, bonnes pratiques et recommandations validées et actionnables.</span><span data-en>An information and prevention chatbot that proactively shares validated, actionable advice, best practices and recommendations.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats &amp; caractéristiques</span><span data-en>Results &amp; features</span></div>
+          <div class="result-placeholder"><span data-fr>À renseigner : informations à venir</span><span data-en>To be filled: information coming soon</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Socioface -->
+  <section class="slide" id="s-proj-socioface">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>I · Accompagnement patient</span><span data-en>I · Patient support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Necker-Enfants Malades · AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · Chirurgie maxillo-faciale pédiatrique</span><span data-en>Department · Pediatric maxillofacial surgery</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Socioface</h1>
+          <span class="proj-subtitle"><span data-fr>Assistant social</span><span data-en>Social-worker assistant</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">RK</div>
+          <div class="av-name">Pr Roman Khonsari</div>
+          <div class="av-role"><span data-fr>PUPH Chirurgien maxillo-facial · Lead</span><span data-en>PUPH maxillofacial surgeon · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">GP</div>
+          <div class="av-name">Dr Giovanna Paternoster</div>
+          <div class="av-role"><span data-fr>PH Neurochirurgien pédiatrique</span><span data-en>Pediatric neurosurgeon (PH)</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">LD</div>
+          <div class="av-name">Laetitia Dos Reis</div>
+          <div class="av-role"><span data-fr>Les P'tits Couragraux</span><span data-en>Les P'tits Couragraux</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">IB</div>
+          <div class="av-name">Inès Ben Aissa</div>
+          <div class="av-role"><span data-fr>Coordinatrice CRMR CRANIOST</span><span data-en>CRMR CRANIOST coordinator</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Identifier les aides sociales auxquelles les familles d'enfants atteints de malformations craniofaciales sont éligibles et les accompagner dans leurs démarches.</span><span data-en>Identify the social benefits that families of children with craniofacial malformations are eligible for and support them through the process.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot qui informe les familles sur les aides auxquelles elles peuvent prétendre selon leur situation et les guide dans les démarches à suivre.</span><span data-en>A chatbot that informs families about the support they can claim based on their situation and guides them through the steps.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>Retours de premiers utilisateurs et accompagnement du projet par un patient partenaire : aide à l'orientation territoriale et institutionnelle, soutien à la constitution des dossiers.</span><span data-en>Early-user feedback and project support from a patient partner: territorial and institutional guidance, help building application files.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Entraîné sur des données en libre accès et issues des CRMR</span><span data-en>Trained on open-access data and CRMR data</span></li>
+            <li><span data-fr>Informations mixtes issues des textes officiels et de la pratique</span><span data-en>Mixed information from official texts and field practice</span></li>
+            <li><span data-fr>Compétence de guidage territorial avec informations sur les structures régionales</span><span data-en>Territorial guidance with information on regional facilities</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Livret Accueil Patient -->
+  <section class="slide" id="s-proj-livret-accueil">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>I · Accompagnement patient</span><span data-en>I · Patient support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">AP-HP Sorbonne Université</span>
+          <span class="proj-service"><span data-fr>Service · Transversal · expérience patient</span><span data-en>Department · Cross-functional · patient experience</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Livret Accueil Patient</h1>
+          <span class="proj-subtitle"><span data-fr>Transversal · expérience patient</span><span data-en>Cross-functional · patient experience</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">MR</div>
+          <div class="av-name">Matthieu Robert</div>
+          <div class="av-role"><span data-fr>Designer en santé · Lead</span><span data-en>Health designer · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">YK</div>
+          <div class="av-name">Yves Kerouas</div>
+          <div class="av-role"><span data-fr>Patient partenaire</span><span data-en>Patient partner</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">DM</div>
+          <div class="av-name">Delphine Mutot</div>
+          <div class="av-role"><span data-fr>Référente du partenariat patients</span><span data-en>Patient-partnership lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">NN</div>
+          <div class="av-name">Noémie Noël</div>
+          <div class="av-role"><span data-fr>Designer en santé</span><span data-en>Health designer</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">ID</div>
+          <div class="av-name">Iris Da Silva</div>
+          <div class="av-role"><span data-fr>Designer en santé</span><span data-en>Health designer</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Faut-il remplacer les livrets d'accueil papier par un agent conversationnel ?</span><span data-en>Should paper welcome booklets be replaced by a conversational agent?</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Outil de recherche qui partage aux patients des établissements de l'AP-HP les informations clés relatives au service qui les suit.</span><span data-en>A search tool that gives AP-HP patients the key information about the department caring for them.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>Tests multiples avec patients partenaires et professionnels de la qualité : outil performant qui répond bien, mais ne doit pas remplacer le livret papier ; il propose sans imposer.</span><span data-en>Multiple tests with patient partners and quality professionals: a strong tool that answers well, but should not replace the paper booklet; it offers without imposing.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Base documentaire à partir des 26 livrets de l'hôpital Saint-Antoine</span><span data-en>Knowledge base built from Saint-Antoine hospital's 26 booklets</span></li>
+            <li><span data-fr>Question initiale orientée pour valider le service du patient</span><span data-en>Guided opening question to confirm the patient's department</span></li>
+            <li><span data-fr>Redirection claire dès que la question touche au soin</span><span data-en>Clear redirection as soon as a question touches care</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER — Aide à la consultation -->
+  <section class="slide dark divider" id="s-div-ii">
+    <svg class="divider-symbol" viewBox="0 0 415.51 407.86" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M65.43,402.63l-47.1-68.1c42.03-29.07,67.12-77.5,67.12-129.56S59.73,103.22,16.64,74.27L62.82,5.55c66.01,44.36,105.42,118.91,105.42,199.43s-38.44,153.13-102.82,197.66Z"/>
+      <path d="M348.04,397.53c-61.91-44.73-98.87-117.58-98.87-194.86,0-38.64,9.28-77.04,26.83-111.04,17.02-32.97,41.78-61.85,71.6-83.5l48.65,67c-40.25,29.23-64.28,76.9-64.28,127.54s24.14,98.54,64.56,127.75l-48.5,67.11Z"/>
+      <path d="M0,364.55c.31-1.28.74-2.55.91-3.85,2.46-18.18,16.82-32.64,35.1-35.26,22.43-3.23,43.24,11.88,46.89,34.31,3.77,23.15-11.95,44.19-34.73,47.64-22.21,3.36-42.94-11.48-47.03-33.56C.8,372.06.38,370.31,0,368.55c0-1.33,0-2.66,0-4Z"/>
+      <path d="M46.5,0c1.35.3,2.71.6,4.06.9,16.9,3.65,29.54,16.63,32.32,33.68,3.84,23.48-12.29,43.59-33.13,47.46-21.82,4.05-42.65-9.18-48.01-30.65-.56-2.25-.85-4.57-1.29-6.85-.07-.38-.3-.73-.45-1.09,0-1.33,0-2.66,0-4,.31-1.28.74-2.54.91-3.83C3.22,18.58,16.14,4.57,32.93.96,34.45.63,35.98.32,37.5,0c3,0,6,0,9,0Z"/>
+      <path d="M378.5,0c1.53.32,3.06.63,4.58.96,16.85,3.63,29.8,17.71,32.01,34.82,2.76,21.32-10.43,40.79-31.26,45.84-25,6.06-48.46-11.64-51.03-35.85-2.21-20.75,11.42-40.78,33.6-45.12,1.03-.2,2.06-.43,3.09-.65,3,0,6,0,9,0Z"/>
+      <path d="M374.02,325.04c23.19-.25,41.5,18.95,41.48,41.36-.02,23.14-18.54,41.52-41.95,41.4-21.73-.11-41-17.32-40.97-41.35.02-25.2,20.82-41.73,41.44-41.41Z"/>
+    </svg>
+    <div class="slide-inner">
+      <div class="divider-num reveal"><span data-fr>II · 5 projets dans cette catégorie</span><span data-en>II · 5 projects in this category</span></div>
+      <h2 class="reveal"><span data-fr>Aide à la consultation</span><span data-en>Consultation support</span></h2>
+      <p class="sub reveal"><span data-fr>Préparer et enrichir la consultation par un recueil de données patient plus exhaustif et structuré, en amont de la rencontre avec le soignant.</span><span data-en>Prepare and enrich the consultation through a more exhaustive, structured collection of patient data ahead of meeting the caregiver.</span></p>
+    </div>
+  </section>
+
+  <!-- PROJET — Vitadoc -->
+  <section class="slide" id="s-proj-vitadoc">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>II · Aide à la consultation</span><span data-en>II · Consultation support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">CHU Dijon Bourgogne</span>
+          <span class="proj-service"><span data-fr>Service · Cardiologie</span><span data-en>Department · Cardiology</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Vitadoc</h1>
+          <span class="proj-subtitle"><span data-fr>Consultation cardiologie</span><span data-en>Cardiology consultation</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">GL</div>
+          <div class="av-name">Pr Gabriel Laurent</div>
+          <div class="av-role"><span data-fr>Chef de service Cardiologie · Lead</span><span data-en>Cardiology department head · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">BL</div>
+          <div class="av-name">Bruno Lapetite</div>
+          <div class="av-role"><span data-fr>Conseiller en IA</span><span data-en>AI advisor</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Réduire le temps nécessaire pour récolter les données clés des patients en première consultation de cardiologie et augmenter la qualité des informations recueillies.</span><span data-en>Cut the time needed to gather key patient data at the first cardiology consultation and improve the quality of information collected.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot qui recueille, structure et synthétise les données patient en amont de la première consultation pour dresser un tableau exhaustif de la situation.</span><span data-en>A chatbot that collects, structures and summarizes patient data ahead of the first consultation to draw a complete picture.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>Attentes d'amélioration exprimées, comme la possibilité de charger des résultats biologiques, d'imagerie, ordonnances et lettres d'adressage.</span><span data-en>Improvement requests gathered, such as uploading lab and imaging results, prescriptions and referral letters.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Recommandations européennes de cardiologie (ESC)</span><span data-en>European cardiology guidelines (ESC)</span></li>
+            <li><span data-fr>Protocole d'accueil dynamique et triage d'urgence sécurisé</span><span data-en>Dynamic intake protocol and safe emergency triage</span></li>
+            <li><span data-fr>Enquête médicale pré-consultation structurée et non linéaire</span><span data-en>Structured, non-linear pre-consultation medical survey</span></li>
+            <li><span data-fr>Adaptation au profil psychologique et clinique (4 profils) + entretien motivationnel</span><span data-en>Adaptation to psychological and clinical profile (4 profiles) + motivational interviewing</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Kairos -->
+  <section class="slide" id="s-proj-kairos">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>II · Aide à la consultation</span><span data-en>II · Consultation support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Lariboisière Fernand-Widal · AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · Chirurgie orthopédique</span><span data-en>Department · Orthopedic surgery</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Kairos</h1>
+          <span class="proj-subtitle"><span data-fr>Consultation chirurgie orthopédique</span><span data-en>Orthopedic surgery consultation</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">JD</div>
+          <div class="av-name">Dr Jules Descamps</div>
+          <div class="av-role"><span data-fr>Chirurgien orthopédiste · Co-lead</span><span data-en>Orthopedic surgeon · Co-lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">PB</div>
+          <div class="av-name">Dr Pierre-Alban Bouché</div>
+          <div class="av-role"><span data-fr>Chirurgien orthopédiste · Co-lead</span><span data-en>Orthopedic surgeon · Co-lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">AB</div>
+          <div class="av-name">Alix Bayle</div>
+          <div class="av-role"><span data-fr>Interne de chirurgie orthopédique</span><span data-en>Orthopedic surgery resident</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Permettre une meilleure qualification des patients en amont de l'orientation vers les chirurgiens orthopédiques grâce à un recueil plus exhaustif des données.</span><span data-en>Better qualify patients before referral to orthopedic surgeons through a more exhaustive data collection.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot qui adresse un questionnaire dynamique et approfondi aux patients pour recueillir des données qualifiées et valider ou ajuster l'orientation.</span><span data-en>A chatbot that sends patients a dynamic, in-depth questionnaire to collect qualified data and confirm or adjust referral.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Interrogatoire ciblé pour recueillir des informations qualifiées</span><span data-en>Targeted questioning to collect qualified information</span></li>
+            <li><span data-fr>Réponses fondées sur un consensus des soignants du service, comparées à différentes IA</span><span data-en>Answers based on a department consensus, compared across several AIs</span></li>
+            <li><span data-fr>Orientation au bon timing vers la consultation, rapidement si besoin</span><span data-en>Referral to the consultation at the right time, quickly if needed</span></li>
+            <li><span data-fr>Chatbot réalisé par téléphone</span><span data-en>Chatbot delivered by phone</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Vestella -->
+  <section class="slide" id="s-proj-vestella">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>II · Aide à la consultation</span><span data-en>II · Consultation support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Necker-Enfants Malades &amp; Lariboisière · AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · ORL</span><span data-en>Department · ENT</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Vestella</h1>
+          <span class="proj-subtitle"><span data-fr>Consultation vertiges</span><span data-en>Vertigo consultation</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">FS</div>
+          <div class="av-name">Pr François Simon</div>
+          <div class="av-role"><span data-fr>PUPH ORL · Necker · Co-lead</span><span data-en>PUPH ENT · Necker · Co-lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">CD</div>
+          <div class="av-name">Dr Cassandre Djian</div>
+          <div class="av-role"><span data-fr>CCA ORL · Lariboisière · Co-lead</span><span data-en>ENT CCA · Lariboisière · Co-lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">AC</div>
+          <div class="av-name">Aurélien Cadix</div>
+          <div class="av-role"><span data-fr>Ingénieur de recherche</span><span data-en>Research engineer</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Préparer la consultation « vertige » adulte ou enfant grâce à un recueil de données patient amont et une explication du déroulement de la consultation.</span><span data-en>Prepare the adult or child 'vertigo' consultation through upfront patient-data collection and an explanation of how the consultation will unfold.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot conversationnel patient qui l'interroge sur les métriques clés relatives à son état de santé.</span><span data-en>A conversational patient chatbot that asks about key metrics on their health status.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>Test sur 12 professionnels de santé et 3 associations de patients : acceptabilité, utilisabilité, gain de temps et qualité de l'anamnèse évalués.</span><span data-en>Tested with 12 health professionals and 3 patient associations: acceptability, usability, time saved and history-taking quality assessed.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Interrogatoire ciblé pour identifier symptômes et degré d'urgence (JSON)</span><span data-en>Targeted questioning to identify symptoms and urgency (JSON)</span></li>
+            <li><span data-fr>Recueil de la perception subjective des crises par le patient</span><span data-en>Capture of the patient's subjective perception of episodes</span></li>
+            <li><span data-fr>Remplissage de questionnaires de qualité de vie (PROM)</span><span data-en>Completion of quality-of-life questionnaires (PROMs)</span></li>
+            <li><span data-fr>Explication du déroulement de la consultation et réassurance</span><span data-en>Explanation of the consultation flow and reassurance</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Parcours chimiothérapie -->
+  <section class="slide" id="s-proj-had-oncologie">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>II · Aide à la consultation</span><span data-en>II · Consultation support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">AP-HP Hospitalisation à Domicile</span>
+          <span class="proj-service"><span data-fr>Service · Oncologie HAD</span><span data-en>Department · Home-care oncology</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Parcours chimiothérapie</h1>
+          <span class="proj-subtitle"><span data-fr>Consultation HAD oncologie</span><span data-en>Home-care oncology pathway</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">FM</div>
+          <div class="av-name">Dr Frédérique Moufle</div>
+          <div class="av-role"><span data-fr>Médecine générale HAD · Lead</span><span data-en>HAD general medicine · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">MV</div>
+          <div class="av-name">Dr Marguerite Vignon</div>
+          <div class="av-role"><span data-fr>Médecine interne</span><span data-en>Internal medicine</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Améliorer la qualité de l'information recueillie auprès des patients et intégrer les anomalies dans la question au prescripteur, pour sécuriser la juste prescription d'un traitement anticancéreux.</span><span data-en>Improve the quality of information gathered from patients and surface anomalies to the prescriber, to secure the right prescription of an anticancer treatment.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>4 agents : un chatbot d'interrogatoire patient, un retour prescripteur structuré en cas d'anomalie, une aide à la décision de traitement et un courrier de sortie facilité.</span><span data-en>4 agents: a patient-questioning chatbot, a structured prescriber report on anomaly, treatment-decision support and an eased discharge letter.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>4 agents IA opérationnels, testés en conditions réelles par des IDE, IPA et médecins HAD. Parcours chimio couvert de bout en bout, du questionnaire clinique au courrier de sortie. Chaque décision reste médicale.</span><span data-en>4 operational AI agents, tested in real conditions by nurses, advanced-practice nurses and HAD physicians. Chemo pathway covered end to end, from clinical questionnaire to discharge letter. Every decision remains the clinician's.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Chatbot en langage patient, intuitif et utilisable au quotidien</span><span data-en>Patient-language chatbot, intuitive and usable day to day</span></li>
+            <li><span data-fr>Retour prescripteur structuré pour une réponse plus adéquate</span><span data-en>Structured prescriber report for a more suitable response</span></li>
+            <li><span data-fr>Arguments détaillés pour ou contre le traitement selon le protocole et le centre</span><span data-en>Detailed arguments for or against treatment per protocol and center</span></li>
+            <li><span data-fr>Nécessite une anonymisation active en environnement non sécurisé</span><span data-en>Requires active anonymization in an unsecured environment</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Gér'IA -->
+  <section class="slide" id="s-proj-geria">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>II · Aide à la consultation</span><span data-en>II · Consultation support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">CHRU de Tours</span>
+          <span class="proj-service"><span data-fr>Service · Gériatrie · Pôle Vieillissement</span><span data-en>Department · Geriatrics · Ageing division</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Gér'IA</h1>
+          <span class="proj-subtitle"><span data-fr>Synthèse gériatrique</span><span data-en>Geriatric summary</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">BF</div>
+          <div class="av-name">Pr Bertrand Fougère</div>
+          <div class="av-role"><span data-fr>Gériatre · CHRU de Tours · Lead</span><span data-en>Geriatrician · CHRU Tours · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">WG</div>
+          <div class="av-name">Dr Wassim Gana</div>
+          <div class="av-role"><span data-fr>Gériatre · CHRU de Tours</span><span data-en>Geriatrician · CHRU Tours</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">GJ</div>
+          <div class="av-name">Guilhem Juers</div>
+          <div class="av-role"><span data-fr>Consultant santé &amp; innovation numérique</span><span data-en>Health &amp; digital-innovation consultant</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Restituer une vision agglomérée, synthétique et sourcée des données clés d'un patient âgé, dispersées entre des sources hétérogènes, pour en faciliter la compréhension rapide par l'urgentiste et le gériatre.</span><span data-en>Deliver an aggregated, concise and sourced view of an elderly patient's key data, scattered across heterogeneous sources, for quick understanding by the ER physician and geriatrician.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Agent d'IA générative qui transforme un dossier patient PDF hétérogène en une synthèse gériatrique structurée (identité, contexte clinique et social, scores et syndromes), chaque élément étant sourcé et daté.</span><span data-en>A generative-AI agent that turns a heterogeneous PDF patient record into a structured geriatric summary (identity, clinical and social context, scores and syndromes), each item sourced and dated.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>Prototype fonctionnel : à partir de dossiers PDF hétérogènes, l'agent restitue une synthèse structurée conforme au schéma attendu sur dossiers fictifs. Validation clinique gold standard à venir.</span><span data-en>Working prototype: from heterogeneous PDF records, the agent returns a structured summary matching the expected schema on fictional cases. Gold-standard clinical validation to come.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Entrée : dossier patient PDF hétérogène (comptes rendus, courriers, biologie, constantes, ordonnances)</span><span data-en>Input: heterogeneous PDF patient record (reports, letters, labs, vitals, prescriptions)</span></li>
+            <li><span data-fr>Sortie : synthèse structurée : scores (BRIEF, TRST, Charlson, CFS…) et 19 syndromes gériatriques avec statut</span><span data-en>Output: structured summary: scores (BRIEF, TRST, Charlson, CFS…) and 19 geriatric syndromes with status</span></li>
+            <li><span data-fr>Agent LLM (Agent Studio) qui analyse le dossier fourni</span><span data-en>LLM agent (Agent Studio) that analyzes the provided record</span></li>
+            <li><span data-fr>Garde-fous : ni diagnostic ni orientation, la décision reste au clinicien</span><span data-en>Guardrails: no diagnosis or referral, the decision remains the clinician's</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER — Soutien aux soignants -->
+  <section class="slide dark divider" id="s-div-iii">
+    <svg class="divider-symbol" viewBox="0 0 415.51 407.86" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M65.43,402.63l-47.1-68.1c42.03-29.07,67.12-77.5,67.12-129.56S59.73,103.22,16.64,74.27L62.82,5.55c66.01,44.36,105.42,118.91,105.42,199.43s-38.44,153.13-102.82,197.66Z"/>
+      <path d="M348.04,397.53c-61.91-44.73-98.87-117.58-98.87-194.86,0-38.64,9.28-77.04,26.83-111.04,17.02-32.97,41.78-61.85,71.6-83.5l48.65,67c-40.25,29.23-64.28,76.9-64.28,127.54s24.14,98.54,64.56,127.75l-48.5,67.11Z"/>
+      <path d="M0,364.55c.31-1.28.74-2.55.91-3.85,2.46-18.18,16.82-32.64,35.1-35.26,22.43-3.23,43.24,11.88,46.89,34.31,3.77,23.15-11.95,44.19-34.73,47.64-22.21,3.36-42.94-11.48-47.03-33.56C.8,372.06.38,370.31,0,368.55c0-1.33,0-2.66,0-4Z"/>
+      <path d="M46.5,0c1.35.3,2.71.6,4.06.9,16.9,3.65,29.54,16.63,32.32,33.68,3.84,23.48-12.29,43.59-33.13,47.46-21.82,4.05-42.65-9.18-48.01-30.65-.56-2.25-.85-4.57-1.29-6.85-.07-.38-.3-.73-.45-1.09,0-1.33,0-2.66,0-4,.31-1.28.74-2.54.91-3.83C3.22,18.58,16.14,4.57,32.93.96,34.45.63,35.98.32,37.5,0c3,0,6,0,9,0Z"/>
+      <path d="M378.5,0c1.53.32,3.06.63,4.58.96,16.85,3.63,29.8,17.71,32.01,34.82,2.76,21.32-10.43,40.79-31.26,45.84-25,6.06-48.46-11.64-51.03-35.85-2.21-20.75,11.42-40.78,33.6-45.12,1.03-.2,2.06-.43,3.09-.65,3,0,6,0,9,0Z"/>
+      <path d="M374.02,325.04c23.19-.25,41.5,18.95,41.48,41.36-.02,23.14-18.54,41.52-41.95,41.4-21.73-.11-41-17.32-40.97-41.35.02-25.2,20.82-41.73,41.44-41.41Z"/>
+    </svg>
+    <div class="slide-inner">
+      <div class="divider-num reveal"><span data-fr>III · 3 projets dans cette catégorie</span><span data-en>III · 3 projects in this category</span></div>
+      <h2 class="reveal"><span data-fr>Soutien aux soignants</span><span data-en>Clinician support</span></h2>
+      <p class="sub reveal"><span data-fr>Outiller les équipes soignantes au quotidien (protocoles, dossiers, gestes) pour leur rendre du temps.</span><span data-en>Equip care teams day to day (protocols, records, procedures) to give them back time.</span></p>
+    </div>
+  </section>
+
+  <!-- PROJET — IRIS -->
+  <section class="slide" id="s-proj-urgia">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>III · Soutien aux soignants</span><span data-en>III · Clinician support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Saint-Antoine · AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · Urgences</span><span data-en>Department · Emergency department</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">IRIS</h1>
+          <span class="proj-subtitle"><span data-fr>Assistant protocoles urgences</span><span data-en>Emergency-protocols assistant</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">FB</div>
+          <div class="av-name">Dr Fabien Brigant</div>
+          <div class="av-role"><span data-fr>Urgentiste, Responsable d'unité · Co-lead</span><span data-en>ER physician, unit head · Co-lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">PR</div>
+          <div class="av-name">Dr Pierre-Alexis Raynal</div>
+          <div class="av-role"><span data-fr>Urgentiste, Chef de service · Co-lead</span><span data-en>ER physician, department head · Co-lead</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Faciliter la lecture des protocoles et procédures des Urgences les plus pertinents au regard d'une situation donnée.</span><span data-en>Ease access to the most relevant emergency protocols and procedures for a given situation.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot soignant qui permet d'identifier le bon protocole à suivre et guide le soignant dans les étapes à respecter.</span><span data-en>A clinician chatbot that identifies the right protocol to follow and guides the caregiver through the steps.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>En phase de test. Objectifs : libérer du temps soignant en facilitant la recherche documentaire et uniformiser les pratiques. Indicateurs suivis : satisfaction globale, pertinence de la réponse et de la source, temps gagné.</span><span data-en>In testing. Goals: free up caregiver time by easing document search and standardize practices. Tracked metrics: overall satisfaction, answer and source relevance, time saved.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>S'appuie sur une base documentaire propre au service</span><span data-en>Built on the department's own knowledge base</span></li>
+            <li><span data-fr>Le soignant pose sa question (protocole, procédure, numéro de téléphone)</span><span data-en>The caregiver asks their question (protocol, procedure, phone number)</span></li>
+            <li><span data-fr>Propose un résumé de la source ainsi que le document source</span><span data-en>Provides a summary of the source plus the source document</span></li>
+            <li><span data-fr>Uniformise les pratiques et libère du temps soignant</span><span data-en>Standardizes practices and frees up caregiver time</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Néoréabot -->
+  <section class="slide" id="s-proj-neoreabot">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>III · Soutien aux soignants</span><span data-en>III · Clinician support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Robert-Debré · AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · Réanimation et pédiatrie néonatales</span><span data-en>Department · Neonatal intensive care &amp; pediatrics</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Néoréabot</h1>
+          <span class="proj-subtitle"><span data-fr>Assistant protocoles réanimation néonatale</span><span data-en>Neonatal-ICU protocols assistant</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">FA</div>
+          <div class="av-name">Flavie Aroulandom</div>
+          <div class="av-role"><span data-fr>Puéricultrice cadre supérieure · Lead</span><span data-en>Senior pediatric-nurse manager · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">VB</div>
+          <div class="av-name">Pr Valérie Biran</div>
+          <div class="av-role"><span data-fr>Cheffe de service · Sponsor</span><span data-en>Department head · Sponsor</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Assister les équipes dans le suivi des protocoles médicaux et paramédicaux du service.</span><span data-en>Help teams follow the department's medical and paramedical protocols.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot qui permet aux infirmiers et médecins d'identifier le bon protocole à suivre et de répondre plus rapidement à leurs questions de soins ou administratives.</span><span data-en>A chatbot helping nurses and physicians find the right protocol and answer care or administrative questions faster.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>11 testeurs médecins et infirmiers : outil performant qui répond correctement, oriente quand ce n'est pas de son ressort, permet de retrouver facilement le bon protocole et facilite l'accès aux documents administratifs.</span><span data-en>11 physician and nurse testers: a strong tool that answers correctly, redirects when out of scope, easily finds the right protocol and eases access to administrative documents.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Analyse les protocoles du service, de l'hôpital et les protocoles administratifs institutionnels</span><span data-en>Analyzes department, hospital and institutional administrative protocols</span></li>
+            <li><span data-fr>Oriente les soignants vers le bon protocole ou la personne ressource</span><span data-en>Directs caregivers to the right protocol or resource person</span></li>
+            <li><span data-fr>Facilite l'accès aux documents administratifs</span><span data-en>Eases access to administrative documents</span></li>
+            <li><span data-fr>Limite le risque d'erreur en orientant au mieux les soignants</span><span data-en>Reduces error risk by guiding caregivers</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Assistant Oncogénétique -->
+  <section class="slide" id="s-proj-assistant-genetique">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>III · Soutien aux soignants</span><span data-en>III · Clinician support</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Pitié-Salpêtrière · AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · Génétique médicale · Oncogénétique</span><span data-en>Department · Medical genetics · Oncogenetics</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Assistant Oncogénétique</h1>
+          <span class="proj-subtitle"><span data-fr>GenoMed · génétique médicale</span><span data-en>GenoMed · medical genetics</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">FC</div>
+          <div class="av-name">Pr Florence Coulet</div>
+          <div class="av-role"><span data-fr>PUPH Biologiste · Lead</span><span data-en>PUPH biologist · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">JL</div>
+          <div class="av-name">Dr Jean-Samuel Loger</div>
+          <div class="av-role"><span data-fr>Assistant Hospitalo-Universitaire</span><span data-en>Hospital-university assistant</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">PB</div>
+          <div class="av-name">Dr Patrick Benusiglio</div>
+          <div class="av-role"><span data-fr>MCU-PH Oncogénéticien</span><span data-en>MCU-PH oncogeneticist</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Améliorer la maîtrise des analyses d'oncogénétique par les praticiens.</span><span data-en>Improve practitioners' command of oncogenetic analyses.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Assistant IA d'aide à la prescription d'analyses d'oncogénétique chez les femmes avec cancer du sein, à leur interprétation et à la transmission de résultats, en lien étroit avec la consultation d'oncogénétique.</span><span data-en>An AI assistant supporting the prescription of oncogenetic analyses in women with breast cancer, their interpretation and results communication, closely tied to the oncogenetics clinic.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>Satisfaction des testeurs (39 sessions ; note moyenne 3,26 / 5). Réponses correctes sur les indications mais outil jugé trop bridé sur les questions précises ; améliorations apportées suite aux retours.</span><span data-en>Tester satisfaction (39 sessions; average 3.26 / 5). Correct on indications but seen as too constrained on precise questions; improvements made from feedback.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>1er outil ciblé sur une indication précise, contexte strict intégré dans le prompt</span><span data-en>First tool focused on a precise indication, strict context built into the prompt</span></li>
+            <li><span data-fr>Contraint à utiliser la base documentaire fournie</span><span data-en>Constrained to use the provided knowledge base</span></li>
+            <li><span data-fr>Objectif : faciliter l'accès à l'oncogénétique en sécurité</span><span data-en>Goal: make oncogenetics accessible safely</span></li>
+            <li><span data-fr>Perspectives : autres indications en oncogénétique et autres domaines de la génétique</span><span data-en>Outlook: other oncogenetic indications and other genetics fields</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER — Aide à l'analyse médicale -->
+  <section class="slide dark divider" id="s-div-iv">
+    <svg class="divider-symbol" viewBox="0 0 415.51 407.86" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M65.43,402.63l-47.1-68.1c42.03-29.07,67.12-77.5,67.12-129.56S59.73,103.22,16.64,74.27L62.82,5.55c66.01,44.36,105.42,118.91,105.42,199.43s-38.44,153.13-102.82,197.66Z"/>
+      <path d="M348.04,397.53c-61.91-44.73-98.87-117.58-98.87-194.86,0-38.64,9.28-77.04,26.83-111.04,17.02-32.97,41.78-61.85,71.6-83.5l48.65,67c-40.25,29.23-64.28,76.9-64.28,127.54s24.14,98.54,64.56,127.75l-48.5,67.11Z"/>
+      <path d="M0,364.55c.31-1.28.74-2.55.91-3.85,2.46-18.18,16.82-32.64,35.1-35.26,22.43-3.23,43.24,11.88,46.89,34.31,3.77,23.15-11.95,44.19-34.73,47.64-22.21,3.36-42.94-11.48-47.03-33.56C.8,372.06.38,370.31,0,368.55c0-1.33,0-2.66,0-4Z"/>
+      <path d="M46.5,0c1.35.3,2.71.6,4.06.9,16.9,3.65,29.54,16.63,32.32,33.68,3.84,23.48-12.29,43.59-33.13,47.46-21.82,4.05-42.65-9.18-48.01-30.65-.56-2.25-.85-4.57-1.29-6.85-.07-.38-.3-.73-.45-1.09,0-1.33,0-2.66,0-4,.31-1.28.74-2.54.91-3.83C3.22,18.58,16.14,4.57,32.93.96,34.45.63,35.98.32,37.5,0c3,0,6,0,9,0Z"/>
+      <path d="M378.5,0c1.53.32,3.06.63,4.58.96,16.85,3.63,29.8,17.71,32.01,34.82,2.76,21.32-10.43,40.79-31.26,45.84-25,6.06-48.46-11.64-51.03-35.85-2.21-20.75,11.42-40.78,33.6-45.12,1.03-.2,2.06-.43,3.09-.65,3,0,6,0,9,0Z"/>
+      <path d="M374.02,325.04c23.19-.25,41.5,18.95,41.48,41.36-.02,23.14-18.54,41.52-41.95,41.4-21.73-.11-41-17.32-40.97-41.35.02-25.2,20.82-41.73,41.44-41.41Z"/>
+    </svg>
+    <div class="slide-inner">
+      <div class="divider-num reveal"><span data-fr>IV · 3 projets dans cette catégorie</span><span data-en>IV · 3 projects in this category</span></div>
+      <h2 class="reveal"><span data-fr>Aide à l'analyse médicale</span><span data-en>Medical analysis</span></h2>
+      <p class="sub reveal"><span data-fr>Synthétiser et croiser des données hétérogènes pour appuyer le diagnostic, l'orientation et la prescription.</span><span data-en>Synthesize and cross-reference heterogeneous data to support diagnosis, referral and prescription.</span></p>
+    </div>
+  </section>
+
+  <!-- PROJET — ACTIV -->
+  <section class="slide" id="s-proj-activ">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>IV · Aide à l'analyse médicale</span><span data-en>IV · Medical analysis</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Pitié-Salpêtrière · AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · Endocrinologie · diabétologie · nutrition · médecine du sport</span><span data-en>Department · Endocrinology · diabetology · nutrition · sports medicine</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">ACTIV</h1>
+          <span class="proj-subtitle"><span data-fr>Prescription d'activité physique adaptée</span><span data-en>Adapted physical-activity prescription</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">BM</div>
+          <div class="av-name">Dr Baptiste Mazas</div>
+          <div class="av-role"><span data-fr>Médecin endocrino-diabéto-nutrition &amp; médecine du sport · Lead</span><span data-en>Endocrinology-diabetology-nutrition &amp; sports physician · Lead</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Permettre à tout médecin de prescrire une activité physique personnalisée et d'orienter le patient en consultation courte (moins de 3 min), malgré la complexité des comorbidités.</span><span data-en>Let any physician prescribe personalized physical activity and refer the patient in a short consultation (under 3 min), despite complex comorbidities.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot qui recueille et structure les informations patient clés et les croise avec les recommandations pour proposer une prescription et une orientation adaptées.</span><span data-en>A chatbot that collects and structures key patient information and cross-references guidelines to propose a suitable prescription and referral.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>Campagne clôturée le 26/06 (35 membres, 23 sessions / 5 testeurs notées) : note 4,89 / 5 · recommandation 5/5 · 89 % d'ordonnances remises. Lancement LinkedIn : 4 775 vues, 92 commentaires, 40 volontaires.</span><span data-en>Campaign closed June 26 (35 members, 23 sessions / 5 testers rated): score 4.89 / 5 · recommendation 5/5 · 89% of prescriptions issued. LinkedIn launch: 4,775 views, 92 comments, 40 volunteers.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Base : ~69 références APA (HAS, INSERM 2019, CNOSF 2020, FITT)</span><span data-en>Base: ~69 APA references (HAS, INSERM 2019, CNOSF 2020, FITT)</span></li>
+            <li><span data-fr>Entrée : profil patient en langage libre (pathologies, projet…)</span><span data-en>Input: patient profile in free language (conditions, goals…)</span></li>
+            <li><span data-fr>Garde-fous : ni diagnostic ni médicament, gestion de la sécurité</span><span data-en>Guardrails: no diagnosis or medication, safety handling</span></li>
+            <li><span data-fr>Sortie : ordonnance APA 3 pages, imprimable et modifiable</span><span data-en>Output: 3-page APA prescription, printable and editable</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Chatlabot -->
+  <section class="slide" id="s-proj-chatlabot">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>IV · Aide à l'analyse médicale</span><span data-en>IV · Medical analysis</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Pitié-Salpêtrière · AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · Immunologie biologique</span><span data-en>Department · Biological immunology</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Chatlabot</h1>
+          <span class="proj-subtitle"><span data-fr>Assistant labo</span><span data-en>Lab assistant</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">MM</div>
+          <div class="av-name">Pr Makoto Miyara</div>
+          <div class="av-role"><span data-fr>PUPH en immunologie biologique · Lead</span><span data-en>PUPH biological immunology · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">PG</div>
+          <div class="av-name">Dr Pascale Ghillani-Dalbin</div>
+          <div class="av-role"><span data-fr>Responsable Unité Immunochimie &amp; Auto-immunité</span><span data-en>Head, Immunochemistry &amp; Autoimmunity unit</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Réduire le temps de saisie et d'analyse des dossiers patients par les techniciens et biologistes du laboratoire.</span><span data-en>Cut the time lab technicians and biologists spend entering and analyzing patient files.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Agent IA qui synthétise et structure des informations patients hétérogènes selon des champs définis, et les croise avec les bonnes pratiques.</span><span data-en>An AI agent that summarizes and structures heterogeneous patient information into defined fields and cross-references best practices.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>L'agent a pu produire les conclusions à partir de données générées dans le laboratoire, dans le secteur spécifique des dysglobulinémies.</span><span data-en>The agent produced conclusions from lab-generated data in the specific area of dysglobulinemias.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Prompt généré à partir d'instructions métier extraites du système qualité du laboratoire</span><span data-en>Prompt built from business rules extracted from the lab's quality-management system</span></li>
+            <li><span data-fr>Génère les conclusions pour chaque échantillon</span><span data-en>Generates conclusions for each sample</span></li>
+            <li><span data-fr>Génère les conclusions à partir de plusieurs échantillons (ex. 30 lignes = 30 échantillons)</span><span data-en>Generates conclusions from multiple samples (e.g. 30 rows = 30 samples)</span></li>
+            <li><span data-fr>Processus généralisable à l'ensemble du laboratoire d'immunologie</span><span data-en>Process generalizable to the whole immunology lab</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — OK Chimio HAD -->
+  <section class="slide" id="s-proj-ok-chimio">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>IV · Aide à l'analyse médicale</span><span data-en>IV · Medical analysis</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">AP-HP Hospitalisation à Domicile</span>
+          <span class="proj-service"><span data-fr>Service · Oncologie HAD</span><span data-en>Department · Home-care oncology</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">OK Chimio HAD</h1>
+          <span class="proj-subtitle"><span data-fr>Recueil patient en hospitalisation à domicile</span><span data-en>Patient intake in home hospitalization</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">MG</div>
+          <div class="av-name">Dr Maya Gutierrez</div>
+          <div class="av-role"><span data-fr>Oncologue HAD · Lead</span><span data-en>HAD oncologist · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">AZ</div>
+          <div class="av-name">Dr Arsène Zogo</div>
+          <div class="av-role"><span data-fr>Pharmacien HAD</span><span data-en>HAD pharmacist</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Recueillir une information plus exhaustive sur les patients en HAD pour faciliter l'analyse des dossiers et la communication entre professionnels, en appui à la décision sur la suite du parcours de soin.</span><span data-en>Collect more exhaustive information on home-care patients to ease file review and communication between professionals, supporting decisions on the next care steps.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot patient ou infirmier qui interroge de manière approfondie et dynamique un patient sur son état et ses symptômes, et structure une synthèse prête à transmission aux médecins.</span><span data-en>A patient or nurse chatbot that questions a patient in depth and dynamically on their condition and symptoms, and structures a summary ready to share with physicians.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>Fiche de recueil clinique très bien analysée par l'agent, sans faux positifs ni faux négatifs. Utilisation pluriquotidienne possible. Analyse fine encore à améliorer.</span><span data-en>Clinical intake form very well analyzed by the agent, with no false positives or negatives. Multiple-times-daily use possible. Fine-grained analysis still to improve.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Questionnaire sur mesure compilant plusieurs standards de traitements</span><span data-en>Custom questionnaire compiling several treatment standards</span></li>
+            <li><span data-fr>Travail pluriprofessionnel (médecin, pharmacien, IPA)</span><span data-en>Multi-professional work (physician, pharmacist, advanced-practice nurse)</span></li>
+            <li><span data-fr>Facile à mettre à jour</span><span data-en>Easy to update</span></li>
+            <li><span data-fr>Pas besoin d'interopérabilité, les données sont anonymes</span><span data-en>No interoperability needed, data is anonymous</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER — Qualité &amp; sécurité des soins -->
+  <section class="slide dark divider" id="s-div-v">
+    <svg class="divider-symbol" viewBox="0 0 415.51 407.86" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M65.43,402.63l-47.1-68.1c42.03-29.07,67.12-77.5,67.12-129.56S59.73,103.22,16.64,74.27L62.82,5.55c66.01,44.36,105.42,118.91,105.42,199.43s-38.44,153.13-102.82,197.66Z"/>
+      <path d="M348.04,397.53c-61.91-44.73-98.87-117.58-98.87-194.86,0-38.64,9.28-77.04,26.83-111.04,17.02-32.97,41.78-61.85,71.6-83.5l48.65,67c-40.25,29.23-64.28,76.9-64.28,127.54s24.14,98.54,64.56,127.75l-48.5,67.11Z"/>
+      <path d="M0,364.55c.31-1.28.74-2.55.91-3.85,2.46-18.18,16.82-32.64,35.1-35.26,22.43-3.23,43.24,11.88,46.89,34.31,3.77,23.15-11.95,44.19-34.73,47.64-22.21,3.36-42.94-11.48-47.03-33.56C.8,372.06.38,370.31,0,368.55c0-1.33,0-2.66,0-4Z"/>
+      <path d="M46.5,0c1.35.3,2.71.6,4.06.9,16.9,3.65,29.54,16.63,32.32,33.68,3.84,23.48-12.29,43.59-33.13,47.46-21.82,4.05-42.65-9.18-48.01-30.65-.56-2.25-.85-4.57-1.29-6.85-.07-.38-.3-.73-.45-1.09,0-1.33,0-2.66,0-4,.31-1.28.74-2.54.91-3.83C3.22,18.58,16.14,4.57,32.93.96,34.45.63,35.98.32,37.5,0c3,0,6,0,9,0Z"/>
+      <path d="M378.5,0c1.53.32,3.06.63,4.58.96,16.85,3.63,29.8,17.71,32.01,34.82,2.76,21.32-10.43,40.79-31.26,45.84-25,6.06-48.46-11.64-51.03-35.85-2.21-20.75,11.42-40.78,33.6-45.12,1.03-.2,2.06-.43,3.09-.65,3,0,6,0,9,0Z"/>
+      <path d="M374.02,325.04c23.19-.25,41.5,18.95,41.48,41.36-.02,23.14-18.54,41.52-41.95,41.4-21.73-.11-41-17.32-40.97-41.35.02-25.2,20.82-41.73,41.44-41.41Z"/>
+    </svg>
+    <div class="slide-inner">
+      <div class="divider-num reveal"><span data-fr>V · 2 projets dans cette catégorie</span><span data-en>V · 2 projects in this category</span></div>
+      <h2 class="reveal"><span data-fr>Qualité &amp; sécurité des soins</span><span data-en>Quality &amp; safety</span></h2>
+      <p class="sub reveal"><span data-fr>Renforcer la qualité, la sécurité et la traçabilité des soins par une lecture facilitée des données et des événements.</span><span data-en>Strengthen care quality, safety and traceability through easier reading of data and events.</span></p>
+    </div>
+  </section>
+
+  <!-- PROJET — Navira -->
+  <section class="slide" id="s-proj-navira">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>V · Qualité &amp; sécurité des soins</span><span data-en>V · Quality &amp; safety</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Avicenne · AP-HP · Inria</span>
+          <span class="proj-service"><span data-fr>Service · Chirurgie digestive / Recherche</span><span data-en>Department · Digestive surgery / Research</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Navira</h1>
+          <span class="proj-subtitle"><span data-fr>Indicateurs qualité</span><span data-en>Quality indicators</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">AL</div>
+          <div class="av-name">Pr Andrea Lazzati</div>
+          <div class="av-role"><span data-fr>Chirurgien digestif · Lead</span><span data-en>Digestive surgeon · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">AD</div>
+          <div class="av-name">Alex-Edward Debelka</div>
+          <div class="av-role"><span data-fr>MD · Data scientist</span><span data-en>MD · Data scientist</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Faciliter la lecture et l'interprétation des indicateurs de qualité du service, notamment en les mettant en regard des indicateurs nationaux.</span><span data-en>Ease reading and interpreting the department's quality indicators, notably by comparing them against national indicators.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Chatbot qui permet la lecture et l'analyse de tableaux d'indicateurs chiffrés relatifs à la qualité et à la sécurité des soins, à l'échelle de l'établissement et au national.</span><span data-en>A chatbot enabling reading and analysis of numerical quality-and-safety indicator tables, at facility and national scale.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats &amp; caractéristiques</span><span data-en>Results &amp; features</span></div>
+          <div class="result-placeholder"><span data-fr>À renseigner : informations à venir</span><span data-en>To be filled: information coming soon</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Osiris Plus -->
+  <section class="slide" id="s-proj-osiris-plus">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>V · Qualité &amp; sécurité des soins</span><span data-en>V · Quality &amp; safety</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · Gestion des risques</span><span data-en>Department · Risk management</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Osiris Plus</h1>
+          <span class="proj-subtitle"><span data-fr>Déclaration des événements indésirables</span><span data-en>Adverse-event reporting</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">YN</div>
+          <div class="av-name">Dr Yến-Lan Nguyen</div>
+          <div class="av-role"><span data-fr>MD, MPH, PhD · Lead</span><span data-en>MD, MPH, PhD · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">GL</div>
+          <div class="av-name">Gaëlle Le Gallais</div>
+          <div class="av-role"><span data-fr>Ingénieure</span><span data-en>Engineer</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Rendre plus simple la déclaration des événements indésirables et améliorer à la fois la qualité des signalements réalisés par les soignants et celle des retours qui leur sont adressés.</span><span data-en>Make adverse-event reporting simpler and improve both the quality of caregivers' reports and of the feedback they receive.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Assistant conversationnel assurant un recueil exhaustif des informations et fournissant un premier niveau de réponse basé sur les données renseignées.</span><span data-en>A conversational assistant ensuring exhaustive information collection and providing a first level of response based on the data entered.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>20 testeurs (médicaux, paramédicaux, administratifs) : 100 % préfèrent Osiris Plus aux outils précédents. 4 types d'événements déjà proposés (chutes, hémorragies, sorties à l'insu, erreurs médicamenteuses) avec items validés par les utilisateurs.</span><span data-en>20 testers (medical, paramedical, administrative): 100% prefer Osiris Plus to previous tools. 4 event types already offered (falls, hemorrhages, unnoticed exits, medication errors) with user-validated items.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Formulaire standardisé avec évaluation de la gravité sur des paramètres cliniques</span><span data-en>Standardized form with severity assessment on clinical parameters</span></li>
+            <li><span data-fr>Éléments d'aide basés sur les recommandations HAS, OMEDIT et AP-HP</span><span data-en>Support based on HAS, OMEDIT and AP-HP guidelines</span></li>
+            <li><span data-fr>Gain de temps et exhaustivité accrue des déclarations</span><span data-en>Time saved and more exhaustive reports</span></li>
+            <li><span data-fr>Aide à l'analyse des facteurs contributifs et aux actions préventives</span><span data-en>Support analyzing contributing factors and preventive actions</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER — Recherche clinique -->
+  <section class="slide dark divider" id="s-div-vi">
+    <svg class="divider-symbol" viewBox="0 0 415.51 407.86" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M65.43,402.63l-47.1-68.1c42.03-29.07,67.12-77.5,67.12-129.56S59.73,103.22,16.64,74.27L62.82,5.55c66.01,44.36,105.42,118.91,105.42,199.43s-38.44,153.13-102.82,197.66Z"/>
+      <path d="M348.04,397.53c-61.91-44.73-98.87-117.58-98.87-194.86,0-38.64,9.28-77.04,26.83-111.04,17.02-32.97,41.78-61.85,71.6-83.5l48.65,67c-40.25,29.23-64.28,76.9-64.28,127.54s24.14,98.54,64.56,127.75l-48.5,67.11Z"/>
+      <path d="M0,364.55c.31-1.28.74-2.55.91-3.85,2.46-18.18,16.82-32.64,35.1-35.26,22.43-3.23,43.24,11.88,46.89,34.31,3.77,23.15-11.95,44.19-34.73,47.64-22.21,3.36-42.94-11.48-47.03-33.56C.8,372.06.38,370.31,0,368.55c0-1.33,0-2.66,0-4Z"/>
+      <path d="M46.5,0c1.35.3,2.71.6,4.06.9,16.9,3.65,29.54,16.63,32.32,33.68,3.84,23.48-12.29,43.59-33.13,47.46-21.82,4.05-42.65-9.18-48.01-30.65-.56-2.25-.85-4.57-1.29-6.85-.07-.38-.3-.73-.45-1.09,0-1.33,0-2.66,0-4,.31-1.28.74-2.54.91-3.83C3.22,18.58,16.14,4.57,32.93.96,34.45.63,35.98.32,37.5,0c3,0,6,0,9,0Z"/>
+      <path d="M378.5,0c1.53.32,3.06.63,4.58.96,16.85,3.63,29.8,17.71,32.01,34.82,2.76,21.32-10.43,40.79-31.26,45.84-25,6.06-48.46-11.64-51.03-35.85-2.21-20.75,11.42-40.78,33.6-45.12,1.03-.2,2.06-.43,3.09-.65,3,0,6,0,9,0Z"/>
+      <path d="M374.02,325.04c23.19-.25,41.5,18.95,41.48,41.36-.02,23.14-18.54,41.52-41.95,41.4-21.73-.11-41-17.32-40.97-41.35.02-25.2,20.82-41.73,41.44-41.41Z"/>
+    </svg>
+    <div class="slide-inner">
+      <div class="divider-num reveal"><span data-fr>VI · 2 projets dans cette catégorie</span><span data-en>VI · 2 projects in this category</span></div>
+      <h2 class="reveal"><span data-fr>Recherche clinique</span><span data-en>Clinical research</span></h2>
+      <p class="sub reveal"><span data-fr>Accélérer la recherche clinique en automatisant les tâches à forte friction : sélection d'articles, recrutement.</span><span data-en>Speed up clinical research by automating high-friction tasks: article screening, recruitment.</span></p>
+    </div>
+  </section>
+
+  <!-- PROJET — Screener -->
+  <section class="slide" id="s-proj-screener">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>VI · Recherche clinique</span><span data-en>VI · Clinical research</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Hôtel-Dieu · AP-HP · Cochrane France</span>
+          <span class="proj-service"><span data-fr>Service · Recherche clinique · Cochrane France</span><span data-en>Department · Clinical research · Cochrane France</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Screener</h1>
+          <span class="proj-subtitle"><span data-fr>Revues systématiques</span><span data-en>Systematic reviews</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">TS</div>
+          <div class="av-name">Dr Thomas Starck</div>
+          <div class="av-role"><span data-fr>Assistant Hospitalo-Universitaire · Lead</span><span data-en>Hospital-university assistant · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">IB</div>
+          <div class="av-name">Pr Isabelle Boutron</div>
+          <div class="av-role"><span data-fr>PUPH · Directrice Cochrane France</span><span data-en>PUPH · Director, Cochrane France</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Les revues systématiques ont un haut niveau de preuve mais demandent un investissement conséquent : l'éligibilité de milliers d'articles est évaluée pendant des semaines par deux chercheurs (parfois un seul, faute de moyens).</span><span data-en>Systematic reviews carry high evidence levels but demand heavy effort: thousands of articles' eligibility is assessed over weeks by two researchers (sometimes one, for lack of resources).</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Agent IA qui juge l'éligibilité des articles sur la base de leur titre et abstract. Screene 1 000 articles en ~10 min.</span><span data-en>An AI agent judging article eligibility from title and abstract. Screens 1,000 articles in ~10 min.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>Test rétrospectif sur 7 revues Cochrane (Gemini 2.5 Flash) : sensibilité 88 % · spécificité 83 %, soit une performance proche d'un humain seul. Cas d'usage : remplacer 1 des 2 relecteurs ou servir de 2e relecteur.</span><span data-en>Retrospective test on 7 Cochrane reviews (Gemini 2.5 Flash): sensitivity 88% · specificity 83%, close to a single human. Use cases: replace 1 of 2 reviewers or act as a 2nd reviewer.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Contexte donné à l'agent : objectif et critères d'inclusion / exclusion de la revue</span><span data-en>Context given to the agent: review objective and inclusion / exclusion criteria</span></li>
+            <li><span data-fr>Données d'entrée : titres et abstracts des études à évaluer</span><span data-en>Input: titles and abstracts of studies to assess</span></li>
+            <li><span data-fr>Données de sortie : décision (inclure / exclure) + justification</span><span data-en>Output: decision (include / exclude) + justification</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET — Amadeus -->
+  <section class="slide" id="s-proj-amadeus">
+    <div class="slide-inner">
+      <div class="proj-header reveal">
+        <span class="proj-cat-tag"><span data-fr>VI · Recherche clinique</span><span data-en>VI · Clinical research</span></span>
+        <div class="proj-meta">
+          <span class="proj-hospital">Hôpital Européen Georges-Pompidou · AP-HP</span>
+          <span class="proj-service"><span data-fr>Service · Centre d'investigations cliniques</span><span data-en>Department · Clinical Investigation Center</span></span>
+        </div>
+        <div class="proj-title-group">
+          <h1 class="proj-title">Amadeus</h1>
+          <span class="proj-subtitle"><span data-fr>E-screening patients</span><span data-en>Patient e-screening</span></span>
+        </div>
+      </div>
+      <div class="proj-section-label reveal"><span data-fr>Équipe projet</span><span data-en>Project team</span></div>
+      <div class="team-row reveal">
+        <div class="avatar">
+          <div class="av-circle">AS</div>
+          <div class="av-name">Dr Alvaro Assis de Souza</div>
+          <div class="av-role"><span data-fr>Néphrologue · CIC HEGP · Lead</span><span data-en>Nephrologist · CIC HEGP · Lead</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">JH</div>
+          <div class="av-name">Pr Jean-Sébastien Hulot</div>
+          <div class="av-role"><span data-fr>PUPH · Chef de service CIC HEGP</span><span data-en>PUPH · CIC HEGP department head</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">KD</div>
+          <div class="av-name">Kadidiatou Doumbia</div>
+          <div class="av-role"><span data-fr>Data scientist · CIC HEGP</span><span data-en>Data scientist · CIC HEGP</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">VG</div>
+          <div class="av-name">Dr Valentin Goutaudier</div>
+          <div class="av-role"><span data-fr>ARC · CIC HEGP</span><span data-en>Clinical research associate · CIC HEGP</span></div>
+        </div>
+        <div class="avatar">
+          <div class="av-circle">MV</div>
+          <div class="av-name">Dr Manuel Vaqueiro-Grana</div>
+          <div class="av-role"><span data-fr>CCA · CIC HEGP</span><span data-en>CCA · CIC HEGP</span></div>
+        </div>
+      </div>
+      <div class="proj-two-col reveal" style="margin-top:10px;">
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Défi adressé</span><span data-en>Challenge</span></div>
+          <p><span data-fr>Améliorer le taux de recrutement de patients dans les essais cliniques académiques et industriels.</span><span data-en>Improve the patient recruitment rate in academic and industry clinical trials.</span></p>
+        </div>
+        <div class="proj-block">
+          <div class="proj-section-label"><span data-fr>Prototype IA développé</span><span data-en>AI prototype</span></div>
+          <p><span data-fr>Agent IA qui analyse les données du dossier informatisé d'un patient afin d'évaluer ses critères d'éligibilité aux essais cliniques.</span><span data-en>An AI agent that analyzes a patient's electronic record data to assess their eligibility criteria for clinical trials.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Résultats des tests · indicateurs clés</span><span data-en>Test results · key metrics</span></div>
+          <p><span data-fr>8 testeurs ont évalué l'agent de pré-screening : 95,5 % de réponses positives en évaluation globale (44 réponses), 96,4 % en évaluation par protocole (662 réponses), aucune réponse négative.</span><span data-en>8 testers evaluated the pre-screening agent: 95.5% positive in global assessment (44 responses), 96.4% in protocol-specific evaluations (662 responses), no negative responses.</span></p>
+        </div>
+        <div class="proj-block full">
+          <div class="proj-section-label"><span data-fr>Principales caractéristiques de l'agent</span><span data-en>Key agent features</span></div>
+          <ul class="feat-list">
+            <li><span data-fr>Analyse de dossiers patients synthétiques au format PDF</span><span data-en>Analysis of synthetic patient records in PDF format</span></li>
+            <li><span data-fr>Connaissance des critères d'éligibilité de 10 protocoles</span><span data-en>Knowledge of eligibility criteria for 10 protocols</span></li>
+            <li><span data-fr>Détermine l'éligibilité, repère les données manquantes et justifie sa réponse</span><span data-en>Determines eligibility, flags missing data and justifies its answer</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ── REMERCIEMENTS ── -->
   <section class="slide dark" id="s-remerciements">
